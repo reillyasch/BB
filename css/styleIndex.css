@@ -1,0 +1,70 @@
+.missionStatement{
+    text-align: center;
+    padding: 20px 0px;
+}
+.missionStatement-header{
+    color: white;
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.header-division-line-missionStatement{
+    border: .9px solid white;
+    width: 33%;
+    margin: auto;
+}
+.missionStatement-text{
+    color: white;
+    font-size: 1.5rem;
+    padding: 0 10%;
+    line-height: 1.5;
+}
+.sponsors-header{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 2.5em;
+}
+.header-division-line-sponsors{
+    border: .9px solid white;
+    width: 10.5%;
+    margin: auto;
+}
+.sponsor-logo{
+    width: 100%;
+}
+.sponsor-name{
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 15px 3%;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+@media screen and (max-width: 768px){
+    .column{
+        width: 50%;
+        padding: 20px 40px;
+    }
+    .home-buttons{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1% 8%;
+    }
+    .buttons{
+        font-size: 1rem;
+    }
+    .header{
+        font-size: 2.5rem;
+    }
+    .header-sponsors{
+        font-size: 2.25rem;
+    }
+}

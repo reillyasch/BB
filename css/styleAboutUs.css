@@ -1,0 +1,106 @@
+/*Variable*/
+:root{
+    --header-font-size: 2.5rem;
+    --leadership-text-font-size: 1.5rem;
+}
+
+
+.aboutUs{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.aboutUs-header{
+    font-size: var(--header-font-size);
+    padding: 10px 0;
+}
+.header-division-line-aboutUs{
+    border: 1px solid white;
+    width: 29%;
+    margin: auto;
+}
+.aboutUs-text{
+    font-size: 1.5rem;
+    padding: 15px 10%;
+}
+.leadership{
+    text-align: center;
+}
+.leadership-header{
+    color: white;
+    font-size: var(--header-font-size);
+    padding: 0 1.5rem;
+}
+.header-division-line-leadership{
+    border: 1px solid white;
+    width: 12.5%;
+    margin: auto;
+}
+.subTeam-leadership{
+    color: black;
+}
+.subTeam-leadership-header{
+    
+    font-size: var(--header-font-size);
+    padding: 0 1.5rem;
+}
+.header-division-line-subTeam-leadership{
+    border: 0.9px solid black;
+    width: 24%;
+    margin: auto;
+}
+.picture{
+    width: 62.5%;
+}
+.leadership .name{
+    font-size: var(--leadership-text-font-size);
+    color: white
+}
+.leadership .title{
+    font-size: var(--leadership-text-font-size);
+    color: white;
+}
+.subTeam-leadership .name{
+    font-size: var(--leadership-text-font-size);
+    color: black;
+}
+.subTeam-leadership .title{
+    font-size: var(--leadership-text-font-size);
+    color: black;
+}
+.linkedin i{
+    font-size: 1.25rem;
+    color: black;
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 15px 30px;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+@media screen and (max-width: 768px){
+    .column{
+        width: 50%;
+        padding: 20px 40px;
+    }
+    .home-buttons{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding: 1% 8%;
+    }
+    .buttons{
+        font-size: 1rem;
+    }
+    .header{
+        font-size: 2.5rem;
+    }
+    .header-sponsors{
+        font-size: 2.25rem;
+    }
+}
