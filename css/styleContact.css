@@ -1,0 +1,51 @@
+.joinBB{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.joinBB-header{
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.header-division-line-joinBB{
+    border: .9px solid white;
+    width: 87%;
+    margin: auto;
+}
+.joinBB-text{
+    font-size: 1.5rem;
+}
+
+.socialMedia{
+    color: white;
+    text-align: center;
+}
+.socialMedia-header{
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.header-division-line-socialMedia{
+    border: .9px solid white;
+    width: 60%;
+    margin: auto;
+}
+.socialMedia-text{
+    font-size: 1.5rem;
+}
+
+.contact{
+    color: black;
+    text-align: center;
+}
+.contact-header{
+    font-size: 2.5rem;
+    padding: 10px 0;
+}
+.header-division-line-contact{
+    border: .9px solid black;
+    width: 25%;
+    margin: auto;
+}
+.contact-text{
+    font-size: 1.5rem;   
+}

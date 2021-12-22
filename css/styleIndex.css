@@ -9,7 +9,7 @@
 }
 .header-division-line-missionStatement{
     border: .9px solid white;
-    width: 33%;
+    width: 500px;
     margin: auto;
 }
 .missionStatement-text{
@@ -26,7 +26,7 @@
 }
 .header-division-line-sponsors{
     border: .9px solid white;
-    width: 10.5%;
+    width: 150px;
     margin: auto;
 }
 .sponsor-logo{

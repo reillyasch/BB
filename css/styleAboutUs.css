@@ -15,7 +15,7 @@
     padding: 10px 0;
 }
 .header-division-line-aboutUs{
-    border: 1px solid white;
+    border: .9px solid white;
     width: 29%;
     margin: auto;
 }
@@ -32,7 +32,7 @@
     padding: 0 1.5rem;
 }
 .header-division-line-leadership{
-    border: 1px solid white;
+    border: .9px solid white;
     width: 12.5%;
     margin: auto;
 }
