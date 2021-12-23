@@ -1,40 +1,33 @@
 .missionStatement{
+    color: white;
     text-align: center;
     padding: 20px 0px;
 }
 .missionStatement-header{
-    color: white;
     font-size: 2.5rem;
     padding: 10px 0;
-}
-.header-division-line-missionStatement{
-    border: .9px solid white;
-    width: 500px;
-    margin: auto;
+    text-decoration: underline;
 }
 .missionStatement-text{
-    color: white;
     font-size: 1.5rem;
     padding: 0 10%;
     line-height: 1.5;
 }
-.sponsors-header{
+.sponsors{
     color: white;
     text-align: center;
+}
+.sponsors-header{
     padding: 10px;
     font-size: 2.5em;
-}
-.header-division-line-sponsors{
-    border: .9px solid white;
-    width: 150px;
-    margin: auto;
+    text-decoration: underline;
 }
 .sponsor-logo{
     width: 100%;
 }
 .sponsor-name{
+    color: black;
     font-size: 1.5rem;
-    color: white;
     text-align: center;
 }
 .column{
