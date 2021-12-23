@@ -6,31 +6,27 @@
 .joinBB-header{
     font-size: 2.5rem;
     padding: 10px 0;
-}
-.header-division-line-joinBB{
-    border: .9px solid white;
-    width: 87%;
-    margin: auto;
+    text-decoration: underline;
 }
 .joinBB-text{
     font-size: 1.5rem;
 }
 
 .socialMedia{
-    color: white;
+    color: black;
     text-align: center;
 }
 .socialMedia-header{
     font-size: 2.5rem;
     padding: 10px 0;
-}
-.header-division-line-socialMedia{
-    border: .9px solid white;
-    width: 60%;
-    margin: auto;
+    text-decoration: underline;
 }
 .socialMedia-text{
     font-size: 1.5rem;
+}
+.socialMedia-link{
+    color: blue;
+    text-decoration: underline;
 }
 
 .contact{
@@ -40,11 +36,7 @@
 .contact-header{
     font-size: 2.5rem;
     padding: 10px 0;
-}
-.header-division-line-contact{
-    border: .9px solid black;
-    width: 25%;
-    margin: auto;
+    text-decoration: underline;
 }
 .contact-text{
     font-size: 1.5rem;   
