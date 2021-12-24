@@ -13,52 +13,41 @@
 .aboutUs-header{
     font-size: var(--header-font-size);
     padding: 10px 0;
+    text-decoration: underline;
 }
-.header-division-line-aboutUs{
-    border: .9px solid white;
-    width: 29%;
-    margin: auto;
-}
+
+
 .aboutUs-text{
     font-size: 1.5rem;
     padding: 15px 10%;
 }
+
 .leadership{
+    color: white;
     text-align: center;
 }
 .leadership-header{
-    color: white;
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
+    text-decoration: underline;
 }
-.header-division-line-leadership{
-    border: .9px solid white;
-    width: 12.5%;
-    margin: auto;
+.leadership .name{
+    font-size: var(--leadership-text-font-size);
 }
+.leadership .title{
+    font-size: var(--leadership-text-font-size);
+}
+
 .subTeam-leadership{
     color: black;
 }
 .subTeam-leadership-header{
-    
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
-}
-.header-division-line-subTeam-leadership{
-    border: 0.9px solid black;
-    width: 24%;
-    margin: auto;
+    text-decoration: underline;
 }
 .picture{
     width: 62.5%;
-}
-.leadership .name{
-    font-size: var(--leadership-text-font-size);
-    color: white
-}
-.leadership .title{
-    font-size: var(--leadership-text-font-size);
-    color: white;
 }
 .subTeam-leadership .name{
     font-size: var(--leadership-text-font-size);

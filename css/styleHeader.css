@@ -3,7 +3,7 @@
 */
 /*Universal Stuff*/
 main{
-    background-image: linear-gradient(black, white);
+    background-image: linear-gradient(black 5%, white);
 }
 /*Header*/
 :root{
