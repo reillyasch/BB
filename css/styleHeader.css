@@ -17,6 +17,7 @@ hr{
 }
 /*Header*/
 :root{
+    --font-size-page-header: 3.5rem;
     --font-size-normal: 1.25rem;
     --font-size-button: 1.00rem;
     --font-size-dropdown-normal: 1.00rem;
@@ -36,14 +37,14 @@ hr{
     box-sizing: border-box;
 }
 header{
-    background-color: black;
+    background-color: gray;
     height: var(--header-height);
     width: auto;
 }
-.header{
+.header-title{
     text-align: center;
     color: var(--text-color);
-    font-size: 3.5rem;
+    font-size: var(--font-size-page-header);
 }
 .navbar{
     display: flex;
@@ -80,11 +81,12 @@ header{
 }
 .nav-logo{
     width: 3.7em;
+    height: 3.0rem;
     margin: 10px;
 }
 .header-img{
     width: 75%;
-    padding: 70px 20px;
+    padding: 5em 0;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -136,7 +138,6 @@ header{
     display: inline;
 }
 .caret-down{
-    display: inline;
     display: none;
 }
 .sub-dropdown-content{
@@ -160,11 +161,19 @@ header{
     display: block;
 }
 @media only screen and (max-width: 768px){
+    .header-img{
+        width: 75%;
+        padding: 5em 0;
+    }
+    .header-title{
+        font-size: var(--font-size-page-header);
+    }
+
     .nav-menu{
         position: fixed;
         left: -100%;
         height: 100%;
-        top: calc(var(--header-height)+17rem);
+        top: 20em;
         flex-direction: column;
         background-color: black;
         width: 100%;
@@ -173,13 +182,7 @@ header{
     .nav-menu.active{
         left: 0;
     }
-    .nav-item{
-        padding: 10px 0;
-    }
-    header.active{
-        position: fixed;
-        background-color: black;
-    }
+    
     .dropdown-content{
         display: none;
         position: relative;
@@ -193,7 +196,6 @@ header{
         margin: auto;
     }
     .caret-right{
-        display: inline;
         display: none;
     }
     .caret-down{
@@ -204,17 +206,23 @@ header{
         left: 0;
         top: 0;
     }
+
+    header.active{
+        position: fixed;
+        background-color: black;
+    }
+
     .hamburger{
         display: block;
         padding: 25px 0px;
         cursor: pointer;
         background-color: transparent;
     }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
     }
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
