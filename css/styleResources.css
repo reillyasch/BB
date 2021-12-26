@@ -1,9 +1,29 @@
+/*Variables*/
+:root{
+    --header-font-size: 2.5rem;
+    --sub-header-font-size: 2.0rem;
+    --text-font-size: 1.5rem;
+}
+
+.links{
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.links-header{
+    font-size: var(--header-font-size);
+    padding: 10px
+}
+.links-text{
+    font-size: var(--text-font-size);
+}
+
 .calendar{
+    color: white;
+    text-align: center;
     padding-top: 20px;
 }
 .calendar-header{
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
+    font-size: var(--header-font-size);
     padding: 10px 0px;
 }

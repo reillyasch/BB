@@ -1,7 +1,9 @@
-/*Variable*/
+/*Variables*/
 :root{
     --header-font-size: 2.5rem;
-    --leadership-text-font-size: 1.5rem;
+    --sub-header-font-size: 2.0rem;
+    --text-font-size: 1.5rem;
+    --title-font-size: 1.4rem;
 }
 
 
@@ -15,11 +17,9 @@
     padding: 10px 0;
     text-decoration: underline;
 }
-
-
 .aboutUs-text{
     font-size: 1.5rem;
-    padding: 15px 10%;
+    padding: 0 10%;
 }
 
 .leadership{
@@ -32,10 +32,11 @@
     text-decoration: underline;
 }
 .leadership .name{
-    font-size: var(--leadership-text-font-size);
+    font-size: var(--text-font-size);
+    text-decoration: underline;
 }
 .leadership .title{
-    font-size: var(--leadership-text-font-size);
+    font-size: var(--title-font-size);
 }
 
 .subTeam-leadership{
@@ -50,11 +51,11 @@
     width: 62.5%;
 }
 .subTeam-leadership .name{
-    font-size: var(--leadership-text-font-size);
+    font-size: var(--text-font-size);
     color: black;
 }
 .subTeam-leadership .title{
-    font-size: var(--leadership-text-font-size);
+    font-size: var(--title-font-size);
     color: black;
 }
 .linkedin i{
