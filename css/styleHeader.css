@@ -37,7 +37,7 @@ hr{
     box-sizing: border-box;
 }
 header{
-    background-color: gray;
+    background-color: black;
     height: var(--header-height);
     width: auto;
 }
@@ -91,7 +91,7 @@ header{
     margin-left: auto;
     margin-right: auto;
 }
-.dropbtn, .dropbtn-active{
+.dropbtn{
     font-size: var(--font-size-button);
     width: 7rem;
     color: var(--text-color);
@@ -161,6 +161,10 @@ header{
     display: block;
 }
 @media only screen and (max-width: 768px){
+    header.active{
+        position: fixed;
+        background-color: black;
+    }
     .header-img{
         width: 75%;
         padding: 5em 0;
@@ -189,6 +193,13 @@ header{
         background-color: var(--background-color-dropdown);
         width: var(--dropdown-width);
     }
+    .nav-link{
+        font-size: 1.5em;
+    }
+    .dropbtn{
+        font-size: 1.5em;
+        width: 6em;
+    }
     .sub-nav-link{
         text-align: center;
     }
@@ -207,14 +218,9 @@ header{
         top: 0;
     }
 
-    header.active{
-        position: fixed;
-        background-color: black;
-    }
-
     .hamburger{
         display: block;
-        padding: 25px 0px;
+        margin: auto 0;
         cursor: pointer;
         background-color: transparent;
     }
