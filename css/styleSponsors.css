@@ -23,8 +23,6 @@
 .column{
     float: left;
     width: 33.33%;
-    padding: 15px 3%;
-    min-height: auto;
     padding: 10px 5%;
 }
 .row::after{

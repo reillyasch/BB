@@ -5,17 +5,31 @@
     --text-font-size: 1.5rem;
 }
 
-.links{
+.link{
     color: white;
     text-align: center;
-    padding: 20px 0;
 }
-.links-header{
+.link-header{
     font-size: var(--header-font-size);
-    padding: 10px
+    text-decoration: underline;
+    padding: 20px 0 10px 0;
 }
-.links-text{
+.link-icon{
+    height: 7em;
+}
+.link-name{
     font-size: var(--text-font-size);
+}
+.column{
+    float: left;
+    width: 25%;
+    padding: 10px 20px;
+    text-align: center;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .calendar{
@@ -26,4 +40,11 @@
 .calendar-header{
     font-size: var(--header-font-size);
     padding: 10px 0px;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 825px){
+    .column{
+        width: 50%;
+    }
 }
