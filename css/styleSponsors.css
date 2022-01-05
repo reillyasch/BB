@@ -23,7 +23,7 @@
 .column{
     float: left;
     width: 33.33%;
-    padding: 10px 5%;
+    padding: 10px 8%;
 }
 .row::after{
     content: "";
