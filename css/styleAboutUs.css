@@ -57,6 +57,9 @@
     font-size: var(--title-font-size);
     color: black;
 }
+.text-black{
+    color: black;
+}
 .linkedin i{
     font-size: 1.5rem;
     color: black;
