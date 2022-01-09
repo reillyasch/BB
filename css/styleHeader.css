@@ -3,7 +3,7 @@
 */
 /*Universal Stuff*/
 main{
-    background-image: linear-gradient(black 5%, white);
+    background-image: linear-gradient(black 5%, rgb(200, 200, 200));
 }
 
 hr{
@@ -80,7 +80,7 @@ header{
     text-decoration: none;
 }
 .nav-active{
-    background-color: var(--background-color-dropdown);
+    text-decoration: underline;
 }
 .nav-logo{
     width: 3.7em;
@@ -106,7 +106,7 @@ header{
     background-color: var(--background-color-dropdown);
 }
 .navbar a:hover:not(.nav-active), .dropdown:hover .dropbtn{
-    background-color: var(--background-color-hover);
+    color: var(--background-color-hover);
 }
 .dropdown-content{
     display: none;
@@ -123,7 +123,7 @@ header{
     font-size: var(--font-size-dropdown-normal);
 }
 .dropdown-content a:hover{
-    background-color: var(--background-color-dropdown-hover);
+    color: var(--background-color-dropdown-hover);
 }
 .dropdown:hover .dropdown-content{
     display: block;
