@@ -11,7 +11,6 @@
 }
 .link-header{
     font-size: var(--header-font-size);
-    text-decoration: underline;
     padding: 20px 0 10px 0;
 }
 .link-icon{
@@ -40,7 +39,6 @@
 .calendar-header{
     font-size: var(--header-font-size);
     padding: 10px 0px;
-    text-decoration: underline;
 }
 
 @media screen and (max-width: 825px){

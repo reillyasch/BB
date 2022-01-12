@@ -48,6 +48,7 @@ header{
     text-align: center;
     color: var(--text-color);
     font-size: var(--font-size-page-header);
+    font-weight: bold;
 }
 .navbar{
     display: flex;

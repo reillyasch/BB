@@ -14,7 +14,6 @@
 .aboutUs-header{
     font-size: var(--header-font-size);
     padding: 10px 0;
-    text-decoration: underline;
 }
 .aboutUs-text{
     font-size: 1.5rem;
@@ -28,11 +27,9 @@
 .leadership-header{
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
-    text-decoration: underline;
 }
 .leadership .name{
     font-size: var(--text-font-size);
-    text-decoration: underline;
 }
 .leadership .title{
     font-size: var(--title-font-size);
@@ -44,7 +41,6 @@
 .subTeam-leadership-header{
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
-    text-decoration: underline;
 }
 .picture{
     height: 20em;
