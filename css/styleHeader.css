@@ -3,7 +3,8 @@
 */
 /*Universal Stuff*/
 section{
-    background-image: linear-gradient(black 5%, rgb(200, 200, 200), rgb(150, 0, 0));
+    background-image: linear-gradient(black,  rgb(150, 0, 0));
+    color: white;
 }
 
 hr{

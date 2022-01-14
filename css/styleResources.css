@@ -6,7 +6,6 @@
 }
 
 .link{
-    color: white;
     text-align: center;
 }
 .link-header{
@@ -30,9 +29,11 @@
     clear: both;
     display: table;
 }
+.caption{
+    font-size: 1.25rem;
+}
 
 .calendar{
-    color: white;
     text-align: center;
     padding-top: 20px;
 }

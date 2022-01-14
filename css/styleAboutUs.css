@@ -5,10 +5,11 @@
     --text-font-size: 1.5rem;
     --title-font-size: 1.4rem;
 }
-
-.aboutUs{
+section{
     color: white;
     text-align: center;
+}
+.aboutUs{
     padding: 20px 0;
 }
 .aboutUs-header{
@@ -20,10 +21,6 @@
     padding: 0 10%;
 }
 
-.leadership{
-    color: white;
-    text-align: center;
-}
 .leadership-header{
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
@@ -34,31 +31,12 @@
 .leadership .title{
     font-size: var(--title-font-size);
 }
-
-.subTeam-leadership{
-    color: black;
-}
-.subTeam-leadership-header{
-    font-size: var(--header-font-size);
-    padding: 0 1.5rem;
-}
 .picture{
     height: 20em;
 }
-.subTeam-leadership .name{
-    font-size: var(--text-font-size);
-    color: black;
-}
-.subTeam-leadership .title{
-    font-size: var(--title-font-size);
-    color: black;
-}
-.text-black{
-    color: black;
-}
 .linkedin i{
     font-size: 1.5rem;
-    color: black;
+    color: white;
 }
 .column{
     float: left;

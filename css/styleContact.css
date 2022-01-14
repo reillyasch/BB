@@ -1,5 +1,4 @@
 .joinBB{
-    color: white;
     text-align: center;
     padding: 20px 0;
 }
@@ -7,28 +6,31 @@
     font-size: 2.5rem;
     padding: 10px 0;
 }
-.joinBB-text{
-    font-size: 1.5rem;
-}
-
 .socialMedia{
-    color: black;
     text-align: center;
 }
 .socialMedia-header{
     font-size: 2.5rem;
     padding: 10px 0;
 }
-.socialMedia-text{
-    font-size: 1.5rem;
+.icon{
+    height: 7em;
 }
-.socialMedia-link{
-    color: blue;
-    text-decoration: underline;
+.icon-name{
+    font-size: 1.5em; /*Change to match*/
 }
-
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px 20px;
+    text-align: center;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 .contact{
-    color: black;
     text-align: center;
 }
 .contact-header{
@@ -38,4 +40,7 @@
 }
 .contact-text{
     font-size: 1.5rem;   
+}
+.contactForm{
+    padding-bottom: 20px;
 }
