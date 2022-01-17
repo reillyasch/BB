@@ -35,7 +35,7 @@
 
 .calendar{
     text-align: center;
-    padding-top: 20px;
+    padding: 20px;
 }
 .calendar-header{
     font-size: var(--header-font-size);
