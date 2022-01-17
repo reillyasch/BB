@@ -1,11 +1,18 @@
-.joinBB{
+.contact{
     text-align: center;
-    padding: 20px 0;
+    padding-top: 10px;
 }
-.joinBB-header{
+.contact-header{
     font-size: 2.5rem;
     padding: 10px 0;
 }
+.contact-text{
+    font-size: 1.5rem;   
+}
+.contactForm{
+    padding-bottom: 20px;
+}
+
 .socialMedia{
     text-align: center;
 }
@@ -33,17 +40,12 @@
 .caption{
     font-size: 1.25rem;
 }
-.contact{
+
+.joinBB{
     text-align: center;
+    padding: 20px 0;
 }
-.contact-header{
+.joinBB-header{
     font-size: 2.5rem;
     padding: 10px 0;
-    text-decoration: underline;
-}
-.contact-text{
-    font-size: 1.5rem;   
-}
-.contactForm{
-    padding-bottom: 20px;
 }

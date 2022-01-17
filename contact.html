@@ -71,13 +71,15 @@
                 </ul>
             </nav>
             <img class="header-img" src="Images/Logos/Banner (Name only).png">
-            <div class="header-title">Contact</div>
+            <div class="header-title">Contact Us</div>
         </header>
 
         <main>
             <section>
                 <div class="contact">
+                    <!--
                     <div class="contact-header">Contact Us</div>
+                    -->
                     <div class="contact-text">Please include your email and contact information to contact us</div>
                     <div class="form">
                         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLAw_LoeNQgnr2rGuVaszkp6KSF6TWfFJamiyjj4mdZkd-mg/viewform?embedded=true" width="80%" height="510" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -106,7 +108,14 @@
                 <div class="joinBB">
                     <div class="joinBB-header">MSOE Student? Join Midnight Robotics</div>
                     <!--<div class="joinBB-text">Call to action</div>-->
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScG56iiZ7ioZ0rDXs4x9t8hPdR1CAzWQgRzGkx34uzH2RmFRw/viewform?embedded=true" width="80%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <form 
+  method="POST" 
+  action="https://script.google.com/macros/s/AKfycby2pvCMoqpli3hcHsNyabP3JWcL-5_bVIfgFWlpsl6M77v0c7MHmo6o4wthIxTKljzI/exec"
+>
+  <input name="Email" type="email" placeholder="Email" required>
+  <input name="Name" type="text" placeholder="Name" required>
+  <button type="submit">Send</button>
+</form>
                 </div>
             </section>
 
@@ -116,4 +125,5 @@
         </main>
     </body>
     <script src="js/script.js"></script>
+    <script src="js/contactScript.js"></script>
 </html>
