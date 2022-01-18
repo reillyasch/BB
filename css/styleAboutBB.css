@@ -3,3 +3,24 @@
     text-align: center;
     padding: 30px 10% 0 10%;
 }
+.weightClasses{
+    font-size: 1.5rem;
+    width: 600px;
+    text-align: center;
+    margin: 20px auto 30px auto;
+}
+.title{
+    font-size: 1.75rem;
+}
+.type{
+    width: 150px;
+}
+.imperial{
+    width: 100px;
+}
+.metric{
+    width: 100px
+}
+th, td{
+    border: 1px solid rgb(255, 255, 255);
+}
