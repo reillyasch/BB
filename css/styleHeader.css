@@ -3,7 +3,7 @@
 */
 /*Universal Stuff*/
 section{
-    background-image: linear-gradient(black 30%,  rgb(100, 0, 0));
+    background-color: black;
     color: white;
 }
 
@@ -18,11 +18,11 @@ hr{
 }
 /*Header*/
 :root{
-    --font-size-page-header: 3.5rem;
-    --font-size-normal: 1.25rem;
+    --font-size-page-header: 4.25rem;
+    --font-size-normal: 1.5rem;
     --font-size-button: 1.25rem;
-    --font-size-dropdown-normal: 1.10rem;
-    --font-size-dropdown-button: 1.10rem;
+    --font-size-dropdown-normal: 1.20rem;
+    --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
     --text-color: white;
     --background-color-hover: darkgray;
@@ -32,12 +32,12 @@ hr{
     --header-height: 30rem;
     --dropdown-width: 11rem;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Oswald' sans-serif; /*Change to Oswald font*/
 }
 
 header{

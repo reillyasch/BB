@@ -1,3 +1,8 @@
+:root{
+    --rowOneWidth: 20%;
+    --Height: 50px;
+    --font-size: 1.25rem;
+}
 .contact{
     text-align: center;
     padding-top: 10px;
@@ -9,8 +14,8 @@
 .contact-text{
     font-size: 1.5rem;   
 }
-.contactForm{
-    padding-bottom: 20px;
+.informtion{
+    
 }
 
 .socialMedia{
@@ -48,4 +53,32 @@
 .joinBB-header{
     font-size: 2.5rem;
     padding: 10px 0;
+    border-radius: 5px;
+}
+.name{
+    width: var(--rowOneWidth);
+    height: var(--Height);
+    font-size: var(--font-size);
+    border-radius: 5px;
+}
+.email{
+    width: var(--rowOneWidth);
+    height: var(--Height);
+    font-size: var(--font-size);
+    border-radius: 5px;
+}
+.padding{
+    padding-bottom: 5px;
+}
+.comments{
+    width: 35%;
+    height: var(--Height);
+    font-size: var(--font-size);
+    border-radius: 5px;
+}
+.submit{
+    width: 5%;
+    height: var(--Height);
+    font-size: var(--font-size);
+    border-radius: 5px;
 }

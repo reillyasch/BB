@@ -33,6 +33,7 @@ section{
 }
 .picture{
     height: 20em;
+    border-radius: 10px;
 }
 .linkedin i{
     font-size: 1.5rem;
