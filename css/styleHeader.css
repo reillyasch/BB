@@ -2,7 +2,7 @@
    Fix nav spacing when responsive
 */
 /*Universal Stuff*/
-section{
+body{
     background-color: black;
     color: white;
 }

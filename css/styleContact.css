@@ -1,5 +1,5 @@
 :root{
-    --rowOneWidth: 20%;
+    --Width: 375px;
     --Height: 50px;
     --font-size: 1.25rem;
 }
@@ -12,10 +12,14 @@
     padding: 10px 0;
 }
 .contact-text{
-    font-size: 1.5rem;   
+    font-size: 2.5rem;
+    padding-bottom: 10px;   
 }
-.informtion{
-    
+.information{
+    font-size: var(--font-size);
+    height: var(--Height);
+    width: var(--Width);
+    border-radius: 5px;
 }
 
 .socialMedia{
@@ -29,7 +33,7 @@
     height: 7em;
 }
 .icon-name{
-    font-size: 1.5em; /*Change to match*/
+    font-size: 2em; /*Change to match*/
 }
 .column{
     float: left;
@@ -43,7 +47,7 @@
     display: table;
 }
 .caption{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .joinBB{
@@ -56,13 +60,13 @@
     border-radius: 5px;
 }
 .name{
-    width: var(--rowOneWidth);
+    width: var(--Width);
     height: var(--Height);
     font-size: var(--font-size);
     border-radius: 5px;
 }
 .email{
-    width: var(--rowOneWidth);
+    width: var(--Width);
     height: var(--Height);
     font-size: var(--font-size);
     border-radius: 5px;
@@ -71,13 +75,13 @@
     padding-bottom: 5px;
 }
 .comments{
-    width: 35%;
+    width: 600px;
     height: var(--Height);
     font-size: var(--font-size);
     border-radius: 5px;
 }
 .submit{
-    width: 5%;
+    width: 150px;
     height: var(--Height);
     font-size: var(--font-size);
     border-radius: 5px;

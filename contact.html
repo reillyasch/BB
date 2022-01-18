@@ -75,59 +75,56 @@
             <div class="header-title">Contact Us</div>
         </header>
 
-        <main>
-            <section>
-                <div class="contact">
-                    <!--
-                    <div class="contact-header">Contact Us</div>
-                    -->
-                    <div class="contact-text">Please include your email and contact information to contact us</div>
-                    <form name="interestForm" method="Post" id="my-form" action="https://script.google.com/macros/s/AKfycbyuvRFi7z6UwKQHxN-AlCPQjq9MdZtA4v-GZ_D2XteEt_kDZdVNtOjYjn27U2UHApoE1Q/exec">
-                        <input class="information" name="Company Information" type="text" placeholder="Please enter contact information" required>
-                        <input class="submit" type="submit"></input>
-                    </form>
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdLAw_LoeNQgnr2rGuVaszkp6KSF6TWfFJamiyjj4mdZkd-mg/viewform?embedded=true" width="80%" height="510" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
+        <script src="js/form.js"></script>
 
-                <div class="socialMedia">
-                    <div class="socialMedia-header">Check out our Social Media</div>
-                    <div class = "row">
-                        <div class = "column">
-                            <a href = "https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
-                            <div class="icon-name">Facebook</div>
-                        </div>
-                        <div class = "column">
-                            <a href = "https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
-                            <div class = "icon-name">Instagram</div>
-                        </div>
-                        <div class = "column">
-                            <a href = "https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
-                            <div class = "icon-name">Youtube</div>
-                        </div>
+        <section>
+            <div class="contact">
+                <!--
+                <div class="contact-header">Contact Us</div>
+                -->
+                <div class="contact-text">Please include your email and contact information to contact us</div>
+                <form id="companyInterestForm" method="Post" action="https://script.google.com/macros/s/AKfycbyuvRFi7z6UwKQHxN-AlCPQjq9MdZtA4v-GZ_D2XteEt_kDZdVNtOjYjn27U2UHApoE1Q/exec">
+                    <input class="information" name="Company Information" placeholder="" type="text">
+                    <input class="submit" type="submit"></input>
+                </form>
+            </div>
+
+            <div class="socialMedia">
+                <div class="socialMedia-header">Check out our Social Media</div>
+                <div class = "row">
+                    <div class = "column">
+                        <a href = "https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
+                        <div class="icon-name">Facebook</div>
                     </div>
-                    <div class="caption">Click icons for more information</div>
+                    <div class = "column">
+                        <a href = "https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
+                        <div class = "icon-name">Instagram</div>
+                    </div>
+                    <div class = "column">
+                        <a href = "https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
+                        <div class = "icon-name">Youtube</div>
+                    </div>
                 </div>
+                <div class="caption">Click icons for more information</div>
+            </div>
 
-                <script src="js/form.js"></script>
+            <div class="joinBB">
+                <div class="joinBB-header">MSOE Student? Join Midnight Robotics</div>
+                <!--<div class="joinBB-text">Call to action</div>-->
+                <form name="interestForm" method="Post" id="studentInterestForm" action="https://script.google.com/macros/s/AKfycbzvcbw5nqY3Lhxe9byEgBHKsllvTQOPP9vHgB1-IAwrEK1tdljV0kx8KYVVB_4KtoGq/exec">
+                    <input class="name" name="Name" type="text" placeholder="First and Last Name (Required)" required>
+                    <input class="email" name="Email" type="email" placeholder="Email (Required)" required><br>
+                    <div class="padding"></div>
+                    <input class="comments" name="Comments" type="text" placeholder="Comments">
+                    <input class="submit" type="submit"></input>
+                </form>
+            </div>
 
-                <div class="joinBB">
-                    <div class="joinBB-header">MSOE Student? Join Midnight Robotics</div>
-                    <!--<div class="joinBB-text">Call to action</div>-->
-                    <form name="interestForm" method="Post" id="my-form" action="https://script.google.com/macros/s/AKfycbzvcbw5nqY3Lhxe9byEgBHKsllvTQOPP9vHgB1-IAwrEK1tdljV0kx8KYVVB_4KtoGq/exec">
-                        <input class="name" name="Name" type="text" placeholder="First and Last Name (Required)" required>
-                        <input class="email" name="Email" type="email" placeholder="Email (Required)" required><br>
-                        <div class="padding"></div>
-                        <input class="comments" name="Comments" type="text" placeholder="Comments">
-                        <input class="submit" type="submit"></input>
-                    </form>
-                </div>
+        </section>
 
-            </section>
-
-            <footer>
-                
-            </footer>
-        </main>
+        <footer>
+            
+        </footer>
     </body>
     <script src="js/script.js"></script>
 </html>

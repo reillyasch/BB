@@ -2,7 +2,7 @@
 :root{
     --header-font-size: 2.5rem;
     --sub-header-font-size: 2.0rem;
-    --text-font-size: 1.5rem;
+    --text-font-size: 2rem;
 }
 
 .link{
@@ -30,7 +30,7 @@
     display: table;
 }
 .caption{
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 
 .calendar{
