@@ -5,7 +5,7 @@
 }
 .weightClasses{
     font-size: 1.5rem;
-    width: 600px;
+    width: 50%;
     text-align: center;
     margin: 20px auto 30px auto;
     padding-bottom: 20px
@@ -14,13 +14,13 @@
     font-size: 1.75rem;
 }
 .type{
-    width: 150px;
+    width: 175px;
 }
 .imperial{
-    width: 100px;
+    width: 125px;
 }
 .metric{
-    width: 100px
+    width: 125px
 }
 th, td{
     border: 1px solid rgb(255, 255, 255);
