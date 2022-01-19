@@ -116,6 +116,7 @@ header{
     position: absolute;
     background-color: var(--background-color-dropdown);
     width: var(--dropdown-width);
+    border-radius: 5px;
 }
 .sub-nav-link{
     color: var(--text-color);
