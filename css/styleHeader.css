@@ -2,8 +2,8 @@
    Fix nav spacing when responsive
 */
 /*Universal Stuff*/
-body{
-    background-color: black;
+section{
+    background-image: linear-gradient(black 30%,  rgb(100, 0, 0));
     color: white;
 }
 
@@ -33,11 +33,12 @@ hr{
     --dropdown-width: 11rem;
 }
 
+@import url('http://fonts.cdnfonts.com/css/lemonmilk');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Oswald' sans-serif; /*Change to Oswald font*/
+    font-family: 'Lemon/Milk', sans-serif;
 }
 
 header{
