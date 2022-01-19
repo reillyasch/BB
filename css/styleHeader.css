@@ -3,7 +3,7 @@
 */
 /*Universal Stuff*/
 section{
-    background-image: linear-gradient(black 30%,  rgb(100, 0, 0));
+    background-image: linear-gradient(black 20%,  rgb(100, 0, 0));
     color: white;
 }
 
@@ -20,7 +20,7 @@ hr{
 :root{
     --font-size-page-header: 4.25rem;
     --font-size-normal: 1.5rem;
-    --font-size-button: 1.25rem;
+    --font-size-button: 1.5rem;
     --font-size-dropdown-normal: 1.20rem;
     --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
@@ -99,7 +99,7 @@ header{
 }
 .dropbtn{
     font-size: var(--font-size-button);
-    width: 7rem;
+    width: 8.1rem;
     color: var(--text-color);
     padding: 10px 5px;
     background-color: transparent;
@@ -166,7 +166,7 @@ header{
 .sub-dropdown:hover .sub-dropdown-content{
     display: block;
 }
-@media only screen and (max-width: 850px){
+@media only screen and (max-width: 960px){
     header.active{
         position: fixed;
         background-color: black;

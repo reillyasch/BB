@@ -6,15 +6,13 @@
     --title-font-size: 1.4rem;
 }
 section{
-    color: white;
     text-align: center;
 }
 .aboutUs{
-    padding: 20px 0;
+    padding: 0 0;
 }
 .aboutUs-header{
     font-size: var(--header-font-size);
-    padding: 10px 0;
 }
 .aboutUs-text{
     font-size: 1.5rem;
