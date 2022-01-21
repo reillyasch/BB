@@ -178,7 +178,7 @@ header{
         padding: 5em 0;
     }
     .header-title{
-        font-size: var(--font-size-page-header);
+        font-size: 3em;
     }
 
     .nav-menu{

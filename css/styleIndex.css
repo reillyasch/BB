@@ -13,19 +13,10 @@
     font-weight: none;
 }
 @media screen and (max-width: 825px){
-    .home-buttons{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        padding: 1% 8%;
+    .missionStatement{
+        font-size: 1.75rem;;
     }
-    .buttons{
-        font-size: 1rem;
-    }
-    .header{
-        font-size: 2.5rem;
-    }
-    .header-sponsors{
+    .sponsors-header{
         font-size: 2.25rem;
     }
 }
