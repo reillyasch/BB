@@ -39,7 +39,7 @@
 }
 .calendar-header{
     font-size: var(--header-font-size);
-    padding: 10px 0px;
+    padding: 70px 0px 10px 0;
 }
 
 @media screen and (max-width: 825px){
