@@ -83,3 +83,9 @@
     font-size: var(--font-size);
     border-radius: 5px;
 }
+
+@media screen and (max-width: 825px){
+    .comments{
+        width: 225px;
+    }
+}
