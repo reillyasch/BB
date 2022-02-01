@@ -8,9 +8,12 @@
 .sponsor-logo{
     width: 40%;
 }
+.ProgressiveRC{
+    padding-top: 20%;
+}
 .column{
     float: left;
-    width: 50%;
+    width: 33.33%;
     padding: 20px 0;
 }
 .row::after{
