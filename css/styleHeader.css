@@ -169,11 +169,11 @@ footer{
     height: 20px;
     padding-right: 20px;
 }
-.icon{
+.icon-footer{
     height: 30px;
     padding: 0 5px;
 }
-.linkedin i{
+.linkedin-footer i{
     font-size: 35px;
     color: black;
 }
