@@ -6,10 +6,6 @@ body{
     background-image: white;
     color: #000000;
 }
-footer{
-    height: 2%;
-    padding: 0 20px 20px 20px;
-}
 
 /*Header*/
 :root{
@@ -20,8 +16,8 @@ footer{
     --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
     --text-color: white;
-    --background-color-hover: darkgray;
-    --background-color-dropdown: rgb(100, 100, 100);
+    --background-color-hover: rgb(124, 124, 124);
+    --background-color-dropdown: rgb(199, 199, 199);
     --background-color-active: rgb(60, 60, 60);
     --background-color-dropdown-hover: rgb(75, 75, 75);
     --header-height: 25%;
@@ -163,6 +159,25 @@ header{
 .sub-dropdown:hover .sub-dropdown-content{
     display: block;
 }
+
+footer{
+    margin: 20px 0 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-img{
+    height: 20px;
+    padding-right: 20px;
+}
+.icon{
+    height: 30px;
+    padding: 0 5px;
+}
+.linkedin i{
+    font-size: 35px;
+    color: black;
+}
+
 @media only screen and (max-width: 960px){
     header.active{
         position: fixed;
@@ -185,7 +200,7 @@ header{
         height: 100%;
         top: 16em;
         flex-direction: column;
-        background-color: black;
+        background-color: white;
         width: 100%;
         text-align: center;
     }
@@ -201,13 +216,16 @@ header{
     }
     .nav-link{
         font-size: 1.5em;
+        color: black;
     }
     .dropbtn{
         font-size: 1.5em;
+        color: black;
         width: 6em;
     }
     .sub-nav-link{
         text-align: center;
+        color: black;
     }
     .sub-dropbtn{
         margin: auto;

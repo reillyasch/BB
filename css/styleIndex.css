@@ -13,15 +13,6 @@
     font-weight: bold;
 }
 
-.linkedin i{
-    font-size: 1.5rem;
-    color: black;
-}
-.footer-header{
-    width: 20%;
-    align-items: center;
-}
-
 @media screen and (max-width: 825px){
     .missionStatement{
         font-size: 1.75rem;;
