@@ -9,18 +9,19 @@ body{
 
 /*Header*/
 :root{
-    --font-size-page-header: 4.25rem;
+    --font-size-page-header: 3.75rem;
     --font-size-normal: 1.5rem;
     --font-size-button: 1.5rem;
     --font-size-dropdown-normal: 1.20rem;
     --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
     --text-color: white;
+    --background-color-header: rgb(30, 30, 30);
     --background-color-hover: rgb(124, 124, 124);
     --background-color-dropdown: rgb(199, 199, 199);
     --background-color-active: rgb(60, 60, 60);
     --background-color-dropdown-hover: rgb(75, 75, 75);
-    --header-height: 25%;
+    --header-height: 400px;
     --dropdown-width: 11rem;
 }
 
@@ -33,16 +34,23 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: var(--background-color-header);
     height: var(--header-height);
     width: auto;
+}
+
+.header-img{
+    width: 75%;
+    padding: 4em 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .header-title{
     text-align: center;
     color: var(--text-color);
     font-size: var(--font-size-page-header);
     font-weight: bold;
-    padding-bottom: 20px;
 }
 .navbar{
     display: flex;
@@ -81,13 +89,6 @@ header{
     width: 5.5em;
     height: 3.0rem;
     margin: 10px;
-}
-.header-img{
-    width: 75%;
-    padding: 5em 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 .dropbtn{
     font-size: var(--font-size-button);
@@ -161,12 +162,12 @@ header{
 }
 
 footer{
-    margin: 20px 0 20px 20px;
+    padding: 20px 0 20px 20px;
     display: flex;
     justify-content: space-between;
 }
 .footer-img{
-    height: 20px;
+    height: 30px;
     padding-right: 20px;
 }
 .icon-footer{
@@ -175,7 +176,7 @@ footer{
 }
 .linkedin-footer i{
     font-size: 35px;
-    color: black;
+    color: white;
 }
 
 @media only screen and (max-width: 960px){
