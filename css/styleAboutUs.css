@@ -23,18 +23,21 @@ section{
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
 }
+.picture{
+    height: 20em;
+    border-radius: 10px;
+}
 .leadership .name{
     font-size: var(--text-font-size);
 }
 .leadership .title{
     font-size: var(--title-font-size);
-}
-.picture{
-    height: 20em;
-    border-radius: 10px;
+    padding-right: 5px;
+    display: inline-block;
 }
 .linkedin i{
     font-size: 1.5rem;
+    display: inline-block;
     color: black;
 }
 .column{
