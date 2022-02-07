@@ -29,6 +29,10 @@
     border-radius: 5px;
 }
 
+footer{
+    padding-top: 1.7%;
+}
+
 @media only screen and (max-width: 960px){
 
 }
