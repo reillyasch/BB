@@ -5,23 +5,25 @@
     --text-font-size: 2rem;
 }
 
-.link{
+.icons{
     text-align: center;
 }
-.link-header{
+.icon-header{
     font-size: var(--header-font-size);
     padding: 20px 0 10px 0;
 }
-.link-icon{
-    height: 7em;
+.icon{
+    height: 7rem;
+    font-size: 7rem;
+    color: black;
 }
-.link-name{
+.icon-name{
     font-size: var(--text-font-size);
 }
 .column{
     float: left;
-    width: 25%;
-    padding: 10px 20px;
+    width: 33.33%;
+    padding: 20px 0;
     text-align: center;
 }
 .row::after{

@@ -169,7 +169,11 @@ footer{
 }
 .footer-img{
     height: 30px;
+}
+.email-footer{
+    font-size: 1.50rem;
     padding-right: 20px;
+    color: white;
 }
 .icon-footer{
     height: 30px;

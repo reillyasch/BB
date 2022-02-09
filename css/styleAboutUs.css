@@ -19,12 +19,18 @@ section{
     padding: 0 10%;
 }
 
+.teamPhoto{
+    padding: 40px 0;
+    height: 25rem;
+    border-radius: 10px;
+}
+
 .leadership-header{
     font-size: var(--header-font-size);
     padding: 0 1.5rem;
 }
 .picture{
-    height: 20em;
+    height: 20rem;
     border-radius: 10px;
 }
 .leadership .name{

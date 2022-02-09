@@ -31,21 +31,24 @@
 
 .socialMedia{
     text-align: center;
+    padding: 0 10%;
 }
 .socialMedia-header{
     font-size: 2.5rem;
     padding: 70px 0 10px 0;
 }
 .icon{
-    height: 7em;
+    height: 7rem;
+    font-size: 7rem;
+    color: black;
 }
 .icon-name{
     font-size: 1.75em; /*Change to match*/
 }
 .column{
     float: left;
-    width: 33.33%;
-    padding: 10px 20px;
+    width: 50%;
+    padding: 10px 0;
     text-align: center;
 }
 .row::after{
