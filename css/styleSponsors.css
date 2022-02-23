@@ -2,20 +2,26 @@
     padding: 30px 0;
     text-align: center;
 }
-.sponsor-name{
-    font-size: 1.5rem;
+.column{
+    float: left;
+    width: 25%;
+    padding-top: 40px;
+    display: block;
 }
 .sponsor-logo{
     width: 40%;
+    text-align: center;
 }
 .ProgressiveRC{
     padding-top: 20%;
 }
-.column{
-    float: left;
-    width: 50%;
-    padding: 20px 0;
+.RectifiedRobotics{
+    padding-top: 15%;
 }
+.RadioMaster{
+    padding-top: 12.5%;
+}
+
 .row::after{
     content: "";
     clear: both;

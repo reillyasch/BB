@@ -162,10 +162,13 @@ header{
 }
 
 footer{
-    padding: 20px 0 20px 20px;
+    padding-top: 20px;
     background-color: var(--background-color-header);
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 5rem;
 }
 .footer-img{
     height: 30px;

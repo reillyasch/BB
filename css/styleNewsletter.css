@@ -1,11 +1,9 @@
 .newsletter{
-    padding-top: 20px;
+    padding-top: 3%;
     text-align: center;
-    padding-bottom: 42px;
 }
 .newsletter-header{
     font-size: 2.5rem;
-    padding: 10px 0px;
 }
 .newsletter-text{
     font-size: 2.5rem;
@@ -30,7 +28,7 @@
 }
 
 footer{
-    padding-top: 1.7%;
+    bottom: 0;
 }
 
 @media only screen and (max-width: 960px){
