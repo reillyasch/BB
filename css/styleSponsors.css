@@ -21,6 +21,9 @@
 .RadioMaster{
     padding-top: 12.5%;
 }
+.PioneerPrintCo{
+    padding-top: 12.5%;
+}
 
 .row::after{
     content: "";
