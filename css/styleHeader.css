@@ -16,9 +16,9 @@ body{
     --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
     --text-color: white;
-    --background-color-header: black; /*rgb(30, 30, 30);*/
-    --background-color-hover: rgb(124, 124, 124);
-    --background-color-dropdown: rgb(199, 199, 199);
+    --background-color-header: rgb(15, 15, 15);
+    --background-color-hover: rgb(53, 53, 53);
+    --background-color-dropdown: rgb(141, 141, 141);
     --background-color-active: rgb(60, 60, 60);
     --background-color-dropdown-hover: rgb(75, 75, 75);
     --header-height: 400px;
@@ -173,18 +173,20 @@ footer{
 .footer-img{
     height: 30px;
 }
-.email-footer{
-    font-size: 1.50rem;
+.footer-email{
+    font-size: 1.5rem;
     padding-right: 20px;
     color: white;
 }
-.icon-footer{
+.footer-icon{
     height: 30px;
-    padding: 0 5px;
+    padding: 0 10px;
 }
-.linkedin-footer i{
+.footer-linkedin i{
     font-size: 35px;
     color: white;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 
 @media only screen and (max-width: 960px){
