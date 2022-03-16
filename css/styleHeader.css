@@ -23,6 +23,7 @@ body{
     --background-color-dropdown-hover: rgb(75, 75, 75);
     --header-height: 400px;
     --dropdown-width: 11rem;
+    --footer-padding: 2.5%;
 }
 
 @import url('http://fonts.cdnfonts.com/css/lemonmilk');
@@ -171,7 +172,7 @@ footer{
     height: 5rem;
 }
 .footer-header{
-    padding-right: 20px;
+    padding-right: var(--footer-padding);
 }
 .footer-img{
     height: 15px;
@@ -184,6 +185,7 @@ footer{
 }
 .footer-socialMedia{
     padding-top: 25px;
+    padding-left: var(--footer-padding);
 }
 .footer-icon{
     height: 20px;
@@ -192,7 +194,6 @@ footer{
 .footer-linkedin i{
     font-size: 21px;
     color: white;
-    padding-left: 20px;
     padding-right: 10px;
 }
 
