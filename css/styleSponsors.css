@@ -2,34 +2,21 @@
     padding: 30px 0;
     text-align: center;
 }
-.column{
-    float: left;
-    width: 25%;
-    padding-top: 40px;
-    display: block;
-}
-.sponsor-logo{
-    width: 40%;
-    text-align: center;
-}
-.ProgressiveRC{
-    padding-top: 20%;
-}
-.RectifiedRobotics{
-    padding-top: 15%;
-}
-.RadioMaster{
-    padding-top: 12.5%;
-}
-.PioneerPrintCo{
-    padding-top: 12.5%;
-}
 
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+  }
+  .grid-item{
+    padding: 20px;
+    margin: auto;
+    display: block;
+  }
+  .grid-item img{
+      width: 40%;
+  }
 @media screen and (max-width: 825px){
     .column{
         width: 100%;
