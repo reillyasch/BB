@@ -16,7 +16,7 @@ body{
     --font-size-dropdown-button: 1.20rem;
     --font-size-sub-dropdown-normal: 1.00rem;
     --text-color: white;
-    --background-color-header: rgb(182, 25, 25);
+    --background-color-header: rgb(15, 15, 15);
     --background-color-hover: rgb(53, 53, 53);
     --background-color-dropdown: rgb(141, 141, 141);
     --background-color-active: rgb(60, 60, 60);
