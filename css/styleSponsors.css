@@ -17,8 +17,9 @@
   .grid-item img{
       width: 40%;
   }
-@media screen and (max-width: 825px){
-    .column{
-        width: 100%;
+@media screen and (max-width: 675px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
     }
 }
