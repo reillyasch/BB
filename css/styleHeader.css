@@ -280,4 +280,13 @@ footer{
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .footer-icon{
+        height: 23.5px;
+        padding: 0 10px;
+    }
+    .footer-linkedin i{
+        font-size: 25px;
+        color: white;
+        padding-right: 10px;
+    }
 }
