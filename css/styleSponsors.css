@@ -5,7 +5,7 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     padding: 10px;
     text-align: center;
   }
@@ -15,7 +15,7 @@
     display: block;
   }
   .grid-item img{
-      width: 40%;
+      width: 30%;
   }
 @media screen and (max-width: 675px){
     .grid-container {

@@ -188,11 +188,11 @@ footer{
     padding-left: var(--footer-padding);
 }
 .footer-icon{
-    height: 20px;
+    height: 27.5px;
     padding: 0 10px;
 }
 .footer-linkedin i{
-    font-size: 21px;
+    font-size: 30px;
     color: white;
     padding-right: 10px;
 }
@@ -279,4 +279,5 @@ footer{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+
 }
