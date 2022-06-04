@@ -1,29 +1,14 @@
-.aboutBB-text{
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 30px 10% 0 10%;
+:root{
+
 }
 .weightClasses{
-    font-size: 1.5rem;
     width: 50%;
-    text-align: center;
-    margin: 20px auto 30px auto;
-    padding-bottom: 20px
-}
-.title{
-    font-size: 1.75rem;
-}
-.type{
-    width: 175px;
-}
-.imperial{
-    width: 125px;
-}
-.metric{
-    width: 125px
+    margin: 0 auto;
+    border-collapse: collapse;
 }
 th, td{
-    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+    padding: .5%;
 }
 
 .row{

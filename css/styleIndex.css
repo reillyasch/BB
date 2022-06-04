@@ -2,7 +2,3 @@
 .aboutUs .header{
     padding-top: var(--default-body-top-header-padding);
 }
-.aboutUsButton{
-    font-size: var(--default-body-font-size);  
-    margin: var(--default-body-button-margin);
-}

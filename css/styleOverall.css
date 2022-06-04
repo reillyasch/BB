@@ -182,15 +182,20 @@ section{
     text-align: center;
 }
 
-.header{
+section .header{
     font-size: var(--default-body-header-font-size);
     padding-top: var(--default-body-header-padding);
     font-weight: bold;
 }
 
-.text{
+section .text{
     padding: 0 10%;
     line-height: 1.5;
+}
+
+section button{
+    font-size: var(--default-body-font-size);  
+    margin: var(--default-body-button-margin);
 }
 
 /* Footer */
