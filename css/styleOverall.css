@@ -198,6 +198,17 @@ section button{
     margin: var(--default-body-button-margin);
 }
 
+section .column{
+    float: left;
+    padding: 15px;
+}
+
+section .row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /* Footer */
 footer{
     padding-top: 0;
