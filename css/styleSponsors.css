@@ -3,19 +3,19 @@
     text-align: center;
 }
 
-.grid-container {
+.logos {
     display: grid;
     grid-template-columns: auto auto auto;
     padding: 10px;
     text-align: center;
   }
-  .grid-item{
+  .item{
     padding: 20px;
     margin: auto;
     display: block;
   }
-  .grid-item img{
-      width: 30%;
+  .item img{
+      width: 50%;
   }
 @media screen and (max-width: 675px){
     .grid-container {

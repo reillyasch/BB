@@ -1,29 +1,24 @@
-/* To Do
-   Fix nav spacing when responsive
-*/
-/*Universal Stuff*/
-body{
-    background-image: white;
-    color: #000000;
-}
-
 /*Header*/
 :root{
-    --font-size-page-header: 3.75rem;
-    --font-size-normal: 1.5rem;
-    --font-size-button: 1.5rem;
-    --font-size-dropdown-normal: 1.20rem;
-    --font-size-dropdown-button: 1.20rem;
-    --font-size-sub-dropdown-normal: 1.00rem;
-    --text-color: white;
-    --background-color-header: rgb(15, 15, 15);
-    --background-color-hover: rgb(53, 53, 53);
-    --background-color-dropdown: rgb(141, 141, 141);
-    --background-color-active: rgb(60, 60, 60);
-    --background-color-dropdown-hover: rgb(75, 75, 75);
-    --header-height: 400px;
-    --dropdown-width: 11rem;
-    --footer-padding: 2.5%;
+    --default-header-background-color: rgb(15, 15, 15); /* Off Black */
+    --default-header-height: 400px;
+    --default-page-header-font-size: 3.75rem;
+    --default-navbar-font-size: 1.50rem;
+    --default-hover-background-color: rgb(160, 160, 160);
+    --default-dropdown-font-size:1.20rem;
+    --default-sub-dropdown-font-size: 1.00rem;
+    --default-navbar-text-color: white;
+    --background-color-dropdown: rgb(15,15,15);
+    --background-color-active: green;
+    --background-color-dropdown-hover: blue;
+    --default-dropdown-width: 11rem;
+    --default-footer-padding: 2.5%;
+
+    --default-body-font-size: 2.0rem;
+    --default-body-header-font-size: 3.0rem;
+    --default-body-top-header-padding: 1%;
+    --default-body-header-padding: 3%;
+    --default-body-button-margin: 1%;
 }
 
 @import url('http://fonts.cdnfonts.com/css/lemonmilk');
@@ -34,9 +29,10 @@ body{
     font-family: 'Lemon/Milk', sans-serif;
 }
 
+/* Header */
 header{
-    background-color: var(--background-color-header);
-    height: var(--header-height);
+    background-color: var(--default-header-background-color);
+    height: var(--default-header-height);
     width: auto;
 }
 
@@ -44,88 +40,103 @@ header{
     width: 75%;
     padding: 4em 0;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
+
 .header-title{
     text-align: center;
-    color: var(--text-color);
-    font-size: var(--font-size-page-header);
+    color: var(--default-navbar-text-color);
+    font-size: var(--default-page-header-font-size);
     font-weight: bold;
 }
+
+/* Hamburger */
 .navbar{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
 }
+
 .hamburger{
     display: none;
 }
+
 .bar{
     display: block;
     width: 25px;
     height: 3px;
-    margin: 5px 20px auto auto;
+    margin: 5px 20px 0 0;
     background-color: white;
 }
+
+/* Navbar */
 .nav-menu{
     display: flex;
     align-items: center;
 }
+
 .nav-item{
     padding: 10px 5px;
     list-style: none;
 }
+
 .nav-link{
-    font-size: var(--font-size-normal);
+    font-size: var(--default-navbar-font-size);
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--default-navbar-text-color);
     padding: 10px 5px;
     text-decoration: none;
 }
+
 .nav-active{
     text-decoration: underline;
 }
-.nav-logo{
+
+.navbar .logo{
     width: 5.5em;
     height: 3.0rem;
     margin: 10px;
 }
+
 .dropbtn{
-    font-size: var(--font-size-button);
-    width: 8.1rem;
-    color: var(--text-color);
+    font-size: var(--default-navbar-font-size);
+    color: var(--default-navbar-text-color);
     padding: 10px 5px;
     background-color: transparent;
     border: none;
 }
+
+/*
 .dropbtn-active{
-    background-color: var(--background-color-dropdown);
+    background-color: red;
 }
+*/
+
 .navbar a:hover:not(.nav-active), .dropdown:hover .dropbtn{
-    color: var(--background-color-hover);
+    color: var(--default-hover-background-color);
 }
+
 .dropdown-content{
     display: none;
     position: absolute;
     background-color: var(--background-color-dropdown);
-    width: var(--dropdown-width);
+    width: var(--default-dropdown-width);
     border-radius: 5px;
 }
+
 .sub-nav-link{
-    color: var(--text-color);
+    color: var(--default-navbar-text-color);
     text-align: left;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: var(--font-size-dropdown-normal);
+    font-size: var(--default-dropdown-font-size);
 }
-.dropdown-content a:hover{
-    color: var(--background-color-dropdown-hover);
-}
+
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
 .sub-dropbtn{
     color: var(--text-color);
     background-color: transparent;
@@ -133,38 +144,59 @@ header{
     border: none;
     text-decoration: none;
     display: block;
-    font-size: var(--font-size-dropdown-button);
+    font-size: var(--default-dropdown-font-size);
 }
+
+/*
 .caret-right{
     display: inline;
 }
 .caret-down{
     display: none;
 }
+*/
+
 .sub-dropdown-content{
     display: none;
     position: absolute;
-    left: var(--dropdown-width);
-    top: 48px;
+    left: var(--default-dropdown-width);
+    top: 50px;
 }
+
 .sub-sub-nav-link{
     color: var(--text-color);
     background-color: var(--background-color-dropdown);
     text-decoration: none;
-    font-size: var(--font-size-sub-dropdown-normal);
+    font-size: var(--default-sub-dropdown-font-size);
     display: block;
     padding: 10px 15px;
 }
-.sub-dropdown-content a:hover{
-    background-color: var(--background-color-dropdown-hover);
-}
+
 .sub-dropdown:hover .sub-dropdown-content{
     display: block;
 }
 
+/* Section */
+section{
+    font-size: var(--default-body-font-size);
+    text-align: center;
+}
+
+.header{
+    font-size: var(--default-body-header-font-size);
+    padding-top: var(--default-body-header-padding);
+    font-weight: bold;
+}
+
+.text{
+    padding: 0 10%;
+    line-height: 1.5;
+}
+
+/* Footer */
 footer{
     padding-top: 0;
-    background-color: var(--background-color-header);
+    background-color: var(--default-header-background-color);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -172,7 +204,7 @@ footer{
     height: 5rem;
 }
 .footer-header{
-    padding-right: var(--footer-padding);
+    padding-right: var(--default-footer-padding);
 }
 .footer-img{
     height: 15px;
@@ -185,7 +217,7 @@ footer{
 }
 .footer-socialMedia{
     padding-top: 25px;
-    padding-left: var(--footer-padding);
+    padding-left: var(--default-footer-padding);
 }
 .footer-icon{
     height: 27.5px;
@@ -200,7 +232,7 @@ footer{
 @media only screen and (max-width: 960px){
     header.active{
         position: fixed;
-        background-color: black;
+        background-color: var(--default-header-background-color);
         width: 100%;
         height: 100%;
     }
@@ -219,7 +251,7 @@ footer{
         height: 100%;
         top: 16em;
         flex-direction: column;
-        background-color: white;
+        background-color: var(--default-navbar-text-color);
         width: 100%;
         text-align: center;
     }
@@ -231,7 +263,7 @@ footer{
         display: none;
         position: relative;
         background-color: var(--background-color-dropdown);
-        width: var(--dropdown-width);
+        width: var(--default-dropdown-width);
     }
     .nav-link{
         font-size: 1.5em;
@@ -288,5 +320,11 @@ footer{
         font-size: 25px;
         color: white;
         padding-right: 10px;
+    }
+
+    /* Section */
+    :root{
+        --default-body-font-size: 1.75rem;
+        --default-body-header-font-size: 2.5rem;
     }
 }

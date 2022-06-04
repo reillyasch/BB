@@ -5,58 +5,45 @@
     --text-font-size: 1.5rem;
     --title-font-size: 1.4rem;
 }
-section{
-    text-align: center;
-}
-.aboutUs{
-    padding: 30px 0;
-}
-.aboutUs-header{
-    font-size: var(--header-font-size);
-}
-.aboutUs-text{
-    font-size: 1.5rem;
-    padding: 0 10%;
+
+/* About Us */
+.aboutUs .header{
+    padding-top: var(--default-body-top-header-padding);
 }
 
-.teamPhoto-div{
-    padding: 40px 0;
-}
-.teamPhoto{
+.aboutUs img{
     height: 25rem;
+    padding-top: 1.5%;
     border-radius: 10px;
 }
 
-.leadership-header{
-    font-size: var(--header-font-size);
-    padding: 0 1.5rem;
-}
-.picture{
+/* Leadership */
+.leadership img{
     height: 20rem;
-    border-radius: 10px;
-}
-.leadership .name{
-    font-size: var(--text-font-size);
+    border-radius: 15px;
 }
 .leadership .title{
-    font-size: var(--title-font-size);
-    padding-right: 5px;
     display: inline-block;
 }
-.linkedin i{
+.leadership i{
     font-size: 1.5rem;
     display: inline-block;
     color: black;
 }
 .column{
     float: left;
-    width: 50%;
-    padding: 15px 30px;
+    width: 33.33%;
+    padding: 15px;
 }
 .row::after{
     content: "";
     clear: both;
     display: table;
+}
+
+.organizationStucture img{
+    max-width: 100%;
+    height: auto;
 }
 
 @media screen and (max-width: 825px){
