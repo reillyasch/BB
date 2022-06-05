@@ -8,9 +8,13 @@
 }
 
 .guidingPrinciples ol{
+    padding-top: 1%;
     columns: var(--principles-columns);
     -webkit-columns: var(--principles-columns);
     -moz-columns: var(--principles-columns);
     list-style-position: inside;
 } 
 
+.support{
+    padding-bottom: var(--default-body-top-header-padding);
+}
