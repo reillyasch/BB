@@ -1,4 +1,16 @@
+:root{
+    --principles-columns: 2;
+}
+
 /* Overall Body */
 .aboutUs .header{
     padding-top: var(--default-body-top-header-padding);
 }
+
+.guidingPrinciples ol{
+    columns: var(--principles-columns);
+    -webkit-columns: var(--principles-columns);
+    -moz-columns: var(--principles-columns);
+    list-style-position: inside;
+} 
+

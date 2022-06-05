@@ -169,10 +169,10 @@ section a{
     display: inline-block;
 }
 
-/* section .column{
+section .column{
     float: left;
     padding: 15px;
-} */
+}
 
 section .row::after{
     content: "";
