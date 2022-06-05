@@ -1,24 +1,23 @@
-/*Header*/
 :root{
-    --default-header-background-color: rgb(15, 15, 15); /* Off Black */
+    /* Header Variables */
+    --default-background-color: rgb(15, 15, 15); /* Off Black */
     --default-header-height: 400px;
     --default-page-header-font-size: 3.75rem;
-    --default-navbar-font-size: 1.50rem;
+    --default-nav-font-size: 1.50rem;
     --default-hover-background-color: rgb(160, 160, 160);
     --default-dropdown-font-size:1.20rem;
     --default-sub-dropdown-font-size: 1.00rem;
-    --default-navbar-text-color: white;
-    --background-color-dropdown: rgb(15,15,15);
-    --background-color-active: green;
-    --background-color-dropdown-hover: blue;
+    --default-nav-text-color: white;
     --default-dropdown-width: 11rem;
     --default-footer-padding: 2.5%;
 
+    /* Body Variables */
     --default-body-font-size: 2.0rem;
     --default-body-header-font-size: 3.0rem;
     --default-body-top-header-padding: 1%;
     --default-body-header-padding: 3%;
-    --default-body-button-margin: 1%;
+    --default-body-button-margin: .5%;
+    --default-body-button-padding: .5%;
 }
 
 @import url('http://fonts.cdnfonts.com/css/lemonmilk');
@@ -31,37 +30,44 @@
 
 /* Header */
 header{
-    background-color: var(--default-header-background-color);
+    background-color: var(--default-background-color);
     height: var(--default-header-height);
     width: auto;
 }
 
-.header-img{
+header .header-img{
     width: 75%;
     padding: 4em 0;
     display: block;
     margin: 0 auto;
 }
 
-.header-title{
+header .header-title{
     text-align: center;
-    color: var(--default-navbar-text-color);
+    color: var(--default-nav-text-color);
     font-size: var(--default-page-header-font-size);
     font-weight: bold;
 }
 
-/* Hamburger */
-.navbar{
+/* Nav */
+nav{
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.5rem;
 }
 
-.hamburger{
+nav img{
+    width: 5.5em;
+    height: 3.0rem;
+    margin: 10px;
+}
+
+/* Hamburger */
+nav .hamburger{
     display: none;
 }
 
-.bar{
+nav .hamburger .bar{
     display: block;
     width: 25px;
     height: 3px;
@@ -69,82 +75,62 @@ header{
     background-color: white;
 }
 
-/* Navbar */
-.nav-menu{
+nav ul{
     display: flex;
     align-items: center;
 }
 
-.nav-item{
+nav ul li{
     padding: 10px 5px;
     list-style: none;
 }
 
-.nav-link{
-    font-size: var(--default-navbar-font-size);
+nav ul li a{
+    font-size: var(--default-nav-font-size);
     font-weight: 400;
-    color: var(--default-navbar-text-color);
+    color: var(--default-nav-text-color);
     padding: 10px 5px;
     text-decoration: none;
 }
 
-.nav-active{
+nav ul li .nav-active{
     text-decoration: underline;
 }
 
-.navbar .logo{
-    width: 5.5em;
-    height: 3.0rem;
-    margin: 10px;
-}
-
-.dropbtn{
-    font-size: var(--default-navbar-font-size);
-    color: var(--default-navbar-text-color);
+nav ul li button{
+    font-size: var(--default-nav-font-size);
+    color: var(--default-nav-text-color);
     padding: 10px 5px;
     background-color: transparent;
     border: none;
 }
 
-/*
-.dropbtn-active{
-    background-color: red;
-}
-*/
-
-.navbar a:hover:not(.nav-active), .dropdown:hover .dropbtn{
-    color: var(--default-hover-background-color);
-}
-
-.dropdown-content{
+nav ul li .dropdown-content{
     display: none;
     position: absolute;
-    background-color: var(--background-color-dropdown);
+    background-color: var(--default-color-dropdown);
     width: var(--default-dropdown-width);
     border-radius: 5px;
 }
 
-.sub-nav-link{
-    color: var(--default-navbar-text-color);
-    text-align: left;
+nav ul li .dropdown-content a{
+    color: var(--default-nav-text-color);
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
     font-size: var(--default-dropdown-font-size);
+}
+
+/* nav ul li .dropdown .dropdown-content a:hover:not(.nav-active) */
+.dropdown:hover button{
+    color: var(--default-hover-background-color);
 }
 
 .dropdown:hover .dropdown-content{
     display: block;
 }
 
-.sub-dropbtn{
-    color: var(--text-color);
-    background-color: transparent;
-    padding: 12px 16px;
-    border: none;
-    text-decoration: none;
-    display: block;
-    font-size: var(--default-dropdown-font-size);
+.dropdown-content a:hover{
+    color:var(--default-hover-background-color);
 }
 
 /*
@@ -155,26 +141,6 @@ header{
     display: none;
 }
 */
-
-.sub-dropdown-content{
-    display: none;
-    position: absolute;
-    left: var(--default-dropdown-width);
-    top: 50px;
-}
-
-.sub-sub-nav-link{
-    color: var(--text-color);
-    background-color: var(--background-color-dropdown);
-    text-decoration: none;
-    font-size: var(--default-sub-dropdown-font-size);
-    display: block;
-    padding: 10px 15px;
-}
-
-.sub-dropdown:hover .sub-dropdown-content{
-    display: block;
-}
 
 /* Section */
 section{
@@ -193,15 +159,20 @@ section .text{
     line-height: 1.5;
 }
 
-section button{
-    font-size: var(--default-body-font-size);  
-    margin: var(--default-body-button-margin);
+section a{
+    font-size: var(--default-body-font-size);
+    margin-top: var(--default-body-button-margin);
+    padding: var(--default-body-button-padding);
+    background-color: var(--default-background-color);
+    color: var(--default-nav-text-color);
+    text-decoration: none;
+    display: inline-block;
 }
 
-section .column{
+/* section .column{
     float: left;
     padding: 15px;
-}
+} */
 
 section .row::after{
     content: "";
@@ -212,7 +183,7 @@ section .row::after{
 /* Footer */
 footer{
     padding-top: 0;
-    background-color: var(--default-header-background-color);
+    background-color: var(--default-background-color);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -248,7 +219,7 @@ footer{
 @media only screen and (max-width: 960px){
     header.active{
         position: fixed;
-        background-color: var(--default-header-background-color);
+        background-color: var(--default-background-color);
         width: 100%;
         height: 100%;
     }
@@ -267,7 +238,7 @@ footer{
         height: 100%;
         top: 16em;
         flex-direction: column;
-        background-color: var(--default-navbar-text-color);
+        background-color: var(--default-nav-text-color);
         width: 100%;
         text-align: center;
     }
@@ -278,7 +249,7 @@ footer{
     .dropdown-content{
         display: none;
         position: relative;
-        background-color: var(--background-color-dropdown);
+        background-color: var(--default-color-dropdown);
         width: var(--default-dropdown-width);
     }
     .nav-link{
