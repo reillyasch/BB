@@ -16,20 +16,20 @@
 }
 
 .aboutUs img{
-    height: 25rem;
+    height: 40rem;
     margin-top: var(--default-body-top-header-padding);
     border-radius: 10px;
 }
 
 /* Guiding Principles */
-ol{
+.guidingPrinciples ol{
     display: inline-block;
     text-align: left;
 }
 
 /* Leadership */
 .leadership img{
-    height: 20rem;
+    height: 25rem;
     border-radius: 15px;
 }
 

@@ -2,7 +2,7 @@
     /* Header Variables */
     --default-background-color: rgb(15, 15, 15); /* Off Black */
     --default-page-header-font-size: 3.5vw;
-    --default-nav-font-size: 1.50vw;
+    --default-nav-font-size: 1.00vw;
     --default-hover-background-color: rgb(160, 160, 160);
     --default-dropdown-font-size:1.20rem;
     --default-sub-dropdown-font-size: 1.00rem;
@@ -39,7 +39,7 @@ header .header-img{
     margin: 0 auto;
 }
 
-header .header-title{
+header h1{
     text-align: center;
     color: var(--default-nav-text-color);
     font-size: var(--default-page-header-font-size);
