@@ -1,89 +1,20 @@
-:root{
-    --Width: 375px;
-    --Height: 50px;
-    --font-size: 1.25rem;
-}
-.contact{
-    text-align: center;
-}
-.contact-header{
-    font-size: 2.5rem;
-}
-.contact-text{
-    font-size: 2.5rem;
-    padding: 30px 10% 10px 10%;
-}
-.companyEmail{
-    font-size: var(--font-size);
-    height: var(--Height);
-    width: var(--Width);
-    border-radius: 5px;
-}
-.information{
-    font-size: var(--font-size);
-    height: var(--Height);
-    width: var(--Width);
-    border-radius: 5px;
-}
-
 .socialMedia{
     text-align: center;
     padding: 0 10%;
 }
-.socialMedia-header{
-    font-size: 2.5rem;
-    padding: 70px 0 10px 0;
-}
 .icon{
     height: 7rem;
-    font-size: 7rem;
-    color: black;
-}
-.icon-name{
-    font-size: 1.75em; /*Change to match*/
 }
 .column{
     float: left;
     width: 50%;
     padding: 10px 0;
     text-align: center;
-}
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
+    background-color: transparent;
+    color: black;
+    font-size: 8rem;
 }
 
-.joinBB{
-    text-align: center;
-    padding: 20px 0;
-}
-.joinBB-header{
-    font-size: 2.5rem;
-    padding: 70px 0 10px 0;
-    border-radius: 5px;
-}
-.name{
-    width: var(--Width);
-    height: var(--Height);
-    font-size: var(--font-size);
-    border-radius: 5px;
-}
-.email{
-    width: var(--Width);
-    height: var(--Height);
-    font-size: var(--font-size);
-    border-radius: 5px;
-}
-.padding{
-    padding-bottom: 5px;
-}
-.comments{
-    width: 600px;
-    height: var(--Height);
-    font-size: var(--font-size);
-    border-radius: 5px;
-}
 .submit{
     width: 150px;
     height: var(--Height);

@@ -12,9 +12,9 @@
 
     <body>
         <header>
-            <nav class="navbar">
+            <nav>
                 <a href="index.html">
-                    <img class="logo" src="Images/Logos/Banner (logo only; Transparent).png" alt="Logo">
+                    <img src="Images/Logos/Banner (logo only; Transparent).png" alt="Logo">
                 </a>
 
                 <div class="hamburger">
@@ -23,103 +23,84 @@
                     <span class="bar"></span>
                 </div>
 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                <ul>
+
+                    <li>
+                        <a class="nav-active"  href="index.html">HOME</a>
                     </li>
-                    <li class="nav-item">
+
+                    <li>
                         <div class="dropdown">
-                            <button class="dropbtn">About Us
+                            <button>ABOUT
                                 <i class="fa fa-caret-down"></i>
                             </button>
                             <div class="dropdown-content">
-                                <a class="sub-nav-link" href="aboutUs.html">About Us</a>
-                                <!--
-                                <div class="sub-dropdown">
-                                    <button class="sub-dropbtn">Sub-Teams
-                                        <div class="caret-right">
-                                            <i class="fa fa-caret-right"></i>
-                                        </div>
-                                        <div class="caret-down">
-                                            <i class="fa fa-caret-down"></i>
-                                        </div>
-                                    </button>
-                                    <div class="sub-dropdown-content">
-                                        <a class="sub-sub-nav-link" href="design.html">Design</a>
-                                        <a class="sub-sub-nav-link" href="controls.html">Controls/Electrical</a>
-                                    </div>
-                                </div>
-                                -->
-                                <a class="sub-nav-link" href="aboutBB.html">About BattleBots</a>
-                                <!--<a class="sub-nav-link" href="robots.html">Past Robots</a>--><!--Include diffent weight classes on the page-->
+                                <a class="sub-nav-link" href="aboutUs.html">ABOUT US</a>
+                                <a class="sub-nav-link" href="aboutBB.html">ABOUT BATTLEBOTS</a>
                             </div>
                         </div>                
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Sponsors</a>
+                    
+                    <li>
+                        <a href="sponsors.html">SPONSORS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-active nav-link" href="contact.html">Contact</a>
+
+                    <li>
+                        <a href="contact.html">CONTACT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="newsletter.html">Newsletter</a>
+
+                    <li>
+                        <a href="resources.html">TEAM RESOURCES</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Team Resources</a><!--Put calendar here-->
-                    </li>
+
                 </ul>
+
             </nav>
             <img class="header-img" src="Images/Logos/Midnight Robotics Banner (Name only; Transparent).png">
-            <div class="header-title">Contact Us</div>
+            <h1>Contact Us</h1>
         </header>
 
         <script src="js/form.js"></script>
 
         <section>
             <div class="contact">
-                <!--
-                <div class="contact-header">Contact Us</div>
-                -->
-                <div class="contact-text">If you want to reach us, please include your email and contact information to contact us below:</div>
+                
+                <h1>Contact Form</h1>
+
                 <form id="companyInterestForm" method="Post" action="https://script.google.com/macros/s/AKfycbyuvRFi7z6UwKQHxN-AlCPQjq9MdZtA4v-GZ_D2XteEt_kDZdVNtOjYjn27U2UHApoE1Q/exec">
                     <input class="companyEmail" name="Company Email" placeholder="Email" type="email">
                     <input class="information" name="Company Information" placeholder="Comments" type="text">
                     <input class="submit" type="submit"></input>
                 </form>
+
             </div>
 
             <div class="socialMedia">
-                <div class="socialMedia-header">Check out our Social Media</div>
+                <h1>Follow us on Social Media!</h1>
                 <div class="row">
-                    <div class="column">
-                        <a href="https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
-                        <div class="icon-name">Facebook</div>
+                    <a class="column" href="https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
+                    <div >
+                        <a class="column" href="https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
                     </div>
-                    <div class="column">
-                        <a href="https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
-                        <div class="icon-name">Instagram</div>
+                    <div>
+                        <a class="column" href="https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
                     </div>
-                    <div class="column">
-                        <a href="https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
-                        <div class="icon-name">Youtube</div>
-                    </div>
-                    <div class="column">
-                        <a href="#" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a>
-                        <div class="icon-name">LinkedIn</div>
+                    <div>
+                        <a class="column" href="#" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="joinBB">
+            <!-- <div class="joinBB">
                 <div class="joinBB-header">MSOE Student? Join Midnight Robotics</div>
-                <!--<div class="joinBB-text">Call to action</div>-->
+                <!--<div class="joinBB-text">Call to action</div>
                 <form name="interestForm" method="Post" id="studentInterestForm" action="https://script.google.com/macros/s/AKfycbzvcbw5nqY3Lhxe9byEgBHKsllvTQOPP9vHgB1-IAwrEK1tdljV0kx8KYVVB_4KtoGq/exec">
                     <input class="name" name="Name" type="text" placeholder="First and Last Name (Required)" required>
                     <input class="email" name="Email" type="email" placeholder="Email (Required)" required><br>
                     <input class="comments" name="Comments" type="text" placeholder="Comments">
                     <input class="submit" type="submit"></input>
                 </form>
-            </div>
+            </div> -->
 
         </section>
 

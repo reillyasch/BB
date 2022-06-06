@@ -10,13 +10,26 @@
     --default-dropdown-width: 11rem;
     --default-footer-padding: 2.5%;
 
-    /* Body Variables */
-    --default-body-font-size: 2.0vw;
+    /* General Section Variables */
     --default-body-header-font-size: 3.0vw;
+    --default-body-font-size: 2.0vw;
     --default-body-top-header-padding: 1%;
     --default-body-header-padding: 3%;
     --default-body-button-margin: .5%;
     --default-body-button-padding: .5%;
+
+    /* Home Page Variables */
+    --principles-columns: 2;
+
+    /* About BattleBots Variables */
+    --default-video-width: 75%;
+    --default-video-height: 500px;
+    --default-weightClasses-width: 50%;
+
+    /* Contact Form */
+    --Width: 375px;
+    --Height: 50px;
+    --font-size: 1.25rem;
 }
 
 @import url('http://fonts.cdnfonts.com/css/lemonmilk');
@@ -53,25 +66,6 @@ nav{
     padding: 1rem 1.5rem;
 }
 
-nav img{
-    width: 5.5em;
-    height: 3.0rem;
-    margin: 10px;
-}
-
-/* Hamburger */
-nav .hamburger{
-    display: none;
-}
-
-nav .hamburger .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 20px 0 0;
-    background-color: white;
-}
-
 nav ul{
     display: flex;
     align-items: center;
@@ -90,10 +84,20 @@ nav ul li a{
     text-decoration: none;
 }
 
+/* Logo */
+nav a img{
+    width: 5.5em;
+    height: 3.0rem;
+    margin: 10px;
+}
+
+/* Current Page */
 nav ul li .nav-active{
     text-decoration: underline;
 }
 
+
+/* Dropdown */
 nav ul li button{
     font-size: var(--default-nav-font-size);
     color: var(--default-nav-text-color);
@@ -118,17 +122,29 @@ nav ul li .dropdown-content a{
     background-color: var(--default-background-color);
 }
 
-/* nav ul li .dropdown .dropdown-content a:hover:not(.nav-active) */
-.dropdown:hover button{
+nav .dropdown:hover button{
     color: var(--default-hover-background-color);
 }
 
-.dropdown:hover .dropdown-content{
+nav .dropdown:hover .dropdown-content{
     display: block;
 }
 
-.dropdown-content a:hover{
+nav .dropdown-content a:hover{
     color:var(--default-hover-background-color);
+}
+
+/* Hamburger */
+nav .hamburger{
+    display: none;
+}
+
+nav .hamburger .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 20px 0 0;
+    background-color: white;
 }
 
 /*
@@ -140,19 +156,19 @@ nav ul li .dropdown-content a{
 }
 */
 
-/* Section */
+/* General Section */
 section{
     font-size: var(--default-body-font-size);
     text-align: center;
 }
 
-section .header{
+section h1{
     font-size: var(--default-body-header-font-size);
     padding-top: var(--default-body-header-padding);
     font-weight: bold;
 }
 
-section .text{
+section p{
     padding: 1% 10% 0 10%;
     line-height: 1.5;
 }
@@ -167,8 +183,9 @@ section a{
 }
 
 section .column{
-    float: left;
+    width: 50%;
     padding: 15px;
+    float: left;
 }
 
 section .row::after{
@@ -176,6 +193,125 @@ section .row::after{
     clear: both;
     display: table;
 }
+
+/* Home Page */
+    /* About Us */
+section .aboutUs h1{
+    padding-top: var(--default-body-top-header-padding);
+}
+
+    /* Guiding Principles */
+section .guidingPrinciples ol{
+    padding-top: 1%;
+    columns: var(--principles-columns);
+    -webkit-columns: var(--principles-columns);
+    -moz-columns: var(--principles-columns);
+    list-style-position: inside;
+} 
+
+section .guidingPrinciples ol li{
+    padding: 2% 0;
+}
+
+    /* Support Us Buttons */
+section .supportButtons{
+    padding-bottom: var(--default-body-top-header-padding);
+}
+
+/* About Us Page */
+    /* About Us and Guiding Principles */
+section .aboutUs p{
+    padding: 0;
+}
+
+section .aboutUs img{
+    height: 40rem;
+    margin-top: var(--default-body-top-header-padding);
+    border-radius: 10px;
+}
+.aboutUs ol li{
+    list-style-position: inside;
+    padding: 2% 0;
+}
+
+    /* Leadership */
+section .leadership img{
+    height: 25rem;
+    border-radius: 15px;
+}
+
+section .leadership .title{
+    display: inline-block;
+}
+
+section .leadership i{
+    font-size: 2rem;
+    display: inline-block;
+    color: var(--default-background-color);
+}
+
+section .leadership .column{
+    width: 33.33%;
+}
+
+section .organizationStucture img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* About BattleBots Page */
+    /* About Combat Robotics and About BattleBots */
+.aboutCombatRobotics iframe, .aboutBattleBots iframe{
+    padding-top: var(--default-body-top-header-padding);
+    width: var(--default-video-width);
+    height: var(--default-video-height);
+}
+
+    /* Constrains and Criteria Table */
+section .constrainsAndCriteria table{
+    width: var(--default-weightClasses-width);
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+section .constrainsAndCriteria table th, td{
+    text-align: center;
+    padding: .5% 0;
+}
+
+/* Sponsors Page */
+    /* Sponsors */  /* Same for Home Page*/
+section .sponsors .sponsorLogos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+  }
+section .sponsors .sponsorLogos a{
+    background-color: transparent;
+}
+
+section .sponsors .sponsorLogos .item{
+    padding: 20px;
+    margin: auto;
+    display: block;
+}
+section .sponsors .sponsorLogos .item img{
+      width: 50%;
+}
+    /* Business Plan */
+
+    /* Sponsor Benefits */
+
+/* Contact Us Page*/
+    /* Contact Form */
+section .contact .companyEmail, section .contact .information{
+    font-size: var(--font-size);
+    height: var(--Height);
+    width: var(--Width);
+    border-radius: 5px;
+}
+
+/* Resources */
 
 /* Footer */
 footer{

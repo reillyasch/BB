@@ -7,14 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
         <link rel="stylesheet" type="text/css" href="css/styleOverall.css"/>
-        <link rel="stylesheet" type="text/css" href="css/styleAboutUs.css"/>
     </head>
 
     <body>
         <header>
-            <nav class="navbar">
+            <nav>
                 <a href="index.html">
-                    <img class="logo" src="Images/Logos/Banner (logo only; Transparent).png" alt="Logo">
+                    <img src="Images/Logos/Banner (logo only; Transparent).png" alt="Logo">
                 </a>
 
                 <div class="hamburger">
@@ -23,52 +22,58 @@
                     <span class="bar"></span>
                 </div>
 
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                <ul>
+
+                    <li>
+                        <a class="nav-active"  href="index.html">HOME</a>
                     </li>
-                    <li class="nav-item">
+
+                    <li>
                         <div class="dropdown">
-                            <div class="nav-active dropbtn">About Us
+                            <button>ABOUT
                                 <i class="fa fa-caret-down"></i>
-                            </div>
+                            </button>
                             <div class="dropdown-content">
-                                <a class="nav-active sub-nav-link" href="aboutUs.html">About Us</a>
-                                <a class="sub-nav-link" href="aboutBB.html">About BattleBots</a>
+                                <a class="sub-nav-link" href="aboutUs.html">ABOUT US</a>
+                                <a class="sub-nav-link" href="aboutBB.html">ABOUT BATTLEBOTS</a>
                             </div>
                         </div>                
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Sponsors</a>
+                    
+                    <li>
+                        <a href="sponsors.html">SPONSORS</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+
+                    <li>
+                        <a href="contact.html">CONTACT</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="newsletter.html">Newsletter</a>
+
+                    <li>
+                        <a href="resources.html">TEAM RESOURCES</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="resources.html">Team Resources</a>
-                    </li>
+
                 </ul>
+
             </nav>
+
             <img class="header-img" src="Images/Logos/Midnight Robotics Banner (Name only; Transparent).png">
-            <div class="header-title">About Us</div>
+            
+            <h1>About Us</h1>
         </header>
 
         <section>
-            <div class="aboutUs row">
+            <div class="aboutUs">
 
                 <div class="column">
    
-                    <div class="header">What is Midnight Robotics</div>
+                    <h1>What is Midnight Robotics</h1>
         
-                    <div class="text">
+                    <p>
                         Started in fall of 2021 by five MSOE students with the goal of creating an unparalleled
                         combat robotics collegiate organization, by providing student the opportunity to grow
                         their competencies to be ever more prepared for their professional career after college 
                         through (collaborative) workshops, group projects and informative talks.
-                    </div>
+                    </p>
         
                 </div>
         
@@ -81,63 +86,59 @@
                 <!-- Guiding Principles -->
                 <div class="column">
                         
-                    <div class="header">Guiding Principles</div>
+                    <h1>Guiding Principles</h1>
 
-                    <div class="text">
+                    <p>
                         Guiding principles serve to guide thinking- mainly decision making-
                         within an organization by utilizing/incorporating the beliefs and
                         values of the organization
-                    </div>
+                    </p>
 
                 </div>
 
-                <div class="column">
+                <ol class="column">
 
-                    <ol class="text">
+                    <li>
+                        Advocate for yourself. No one else will
+                    </li>
 
-                        <li>
-                            Advocate for yourself. No one else will
-                        </li>
+                    <li>
+                        Strive for excellence, always.
+                    </li>
 
-                        <li>
-                            Strive for excellence, always.
-                        </li>
+                    <li>
+                        Go get it
+                    </li>
 
-                        <li>
-                            Go get it
-                        </li>
+                    <li>
+                        Look at the tree and the forest
+                    </li>
 
-                        <li>
-                            Look at the tree and the forest
-                        </li>
+                    <li>
+                        Build Relationships
+                    </li>
 
-                        <li>
-                            Build Relationships
-                        </li>
+                    <li>
+                        Be net positive
+                    </li>
 
-                        <li>
-                            Be net positive
-                        </li>
+                    <li>
+                        Great minds don't think alike
+                    </li>
 
-                        <li>
-                            Great minds don't think alike
-                        </li>
+                    <li>
+                        Celebrate our victories
+                    </li>
 
-                        <li>
-                            Celebrate our victories
-                        </li>
-
-                    </ol>
-
-                </div>
+                </ol>
     
             </div>
 
             <div class="leadership">
 
-                <div class="header">Leadership</div>
+                <h1>Leadership</h1>
                 
-                <div class="row">
+                <div>
                     
                     <div class="column">
                         <img src="Images/LeadershipPics/BenYoung.jpg">
@@ -184,7 +185,7 @@
 
                 <div class="organizationStucture">
 
-                    <div class="header">Organization Structure</div>
+                    <h1>Organization Structure</h1>
 
                     <img src="Images/OrganizationalStructure.jpg">
 
