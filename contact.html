@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/styleOverall.css"/>
-        <link rel="stylesheet" type="text/css" href="css/styleContact.css"/>
     </head>
 
     <body>
@@ -56,51 +55,53 @@
                 </ul>
 
             </nav>
+           
             <img class="header-img" src="Images/Logos/Midnight Robotics Banner (Name only; Transparent).png">
+            
             <h1>Contact Us</h1>
         </header>
 
-        <script src="js/form.js"></script>
-
         <section>
-            <div class="contact">
+            <div class="row">
+                <div class="form column">
                 
-                <h1>Contact Form</h1>
+                    <h1>Contact Form</h1>
 
-                <form id="companyInterestForm" method="Post" action="https://script.google.com/macros/s/AKfycbyuvRFi7z6UwKQHxN-AlCPQjq9MdZtA4v-GZ_D2XteEt_kDZdVNtOjYjn27U2UHApoE1Q/exec">
-                    <input class="companyEmail" name="Company Email" placeholder="Email" type="email">
-                    <input class="information" name="Company Information" placeholder="Comments" type="text">
-                    <input class="submit" type="submit"></input>
-                </form>
+                    <form method="post" id="contactForm" action="https://script.google.com/macros/s/AKfycbx7K_r1TjLfPodNObJM8MFEa6zmLMWXaCPS4mZoYv0iOxSpMHfCjP6YmDkLwy8MHuzLwQ/exec">
+                        
+                        <label>Name:</label>
+                        <input id="name" name="Name" type="text"  required>
+                        
+                        <label>Email:</label>
+                        <input id="email" name="Email" type="email" required>
+                        
+                        <label>Comments:</label>
+                        <textarea id="comments" name="Comments" rows="10" cols="50"></textarea>
+                        
+                        <input id="submit" type="submit" value="Submit"></input>
+                    
+                    </form>
 
-            </div>
+                    <script src="js/form.js"></script>
 
-            <div class="socialMedia">
-                <h1>Follow us on Social Media!</h1>
-                <div class="row">
-                    <a class="column" href="https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
-                    <div >
-                        <a class="column" href="https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
-                    </div>
+                </div>
+
+                <div class="socialMedia column">
+                    <h1>Follow us on Social Media!</h1>
                     <div>
-                        <a class="column" href="https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
-                    </div>
-                    <div>
-                        <a class="column" href="#" target="_blank" class="icon"><i class="fa fa-linkedin-square"></i></a>
+                        <a class="column" href="https://www.facebook.com/Midnight_Robotics_Battlebots" target = "_blank"><img class="icon" src = "Images/Icons/facebook.png"></a>
+                        <div >
+                            <a class="column" href="https://www.instagram.com/midnight_robotics_battlebot/" target = "_blank"><img class="icon" src = "Images/Icons/instagram.png"></a>
+                        </div>
+                        <div>
+                            <a class="column" href="https://www.youtube.com/channel/UC2I2HOOKJ-tt-EgcXRE-MUw" target = "_blank"><img class="icon" src = "Images/Icons/youtube.png"></a>
+                        </div>
+                        <div>
+                            <a class="column" href="#" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- <div class="joinBB">
-                <div class="joinBB-header">MSOE Student? Join Midnight Robotics</div>
-                <!--<div class="joinBB-text">Call to action</div>
-                <form name="interestForm" method="Post" id="studentInterestForm" action="https://script.google.com/macros/s/AKfycbzvcbw5nqY3Lhxe9byEgBHKsllvTQOPP9vHgB1-IAwrEK1tdljV0kx8KYVVB_4KtoGq/exec">
-                    <input class="name" name="Name" type="text" placeholder="First and Last Name (Required)" required>
-                    <input class="email" name="Email" type="email" placeholder="Email (Required)" required><br>
-                    <input class="comments" name="Comments" type="text" placeholder="Comments">
-                    <input class="submit" type="submit"></input>
-                </form>
-            </div> -->
 
         </section>
 

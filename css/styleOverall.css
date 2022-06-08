@@ -84,68 +84,68 @@ nav ul li a{
     text-decoration: none;
 }
 
-/* Logo */
-nav a img{
-    width: 5.5em;
-    height: 3.0rem;
-    margin: 10px;
-}
+    /* Logo */
+    nav a img{
+        width: 5.5em;
+        height: 3.0rem;
+        margin: 10px;
+    }
 
-/* Current Page */
-nav ul li .nav-active{
-    text-decoration: underline;
-}
+    /* Current Page */
+    nav ul li .nav-active{
+        text-decoration: underline;
+    }
 
 
-/* Dropdown */
-nav ul li button{
-    font-size: var(--default-nav-font-size);
-    color: var(--default-nav-text-color);
-    padding: 10px 5px;
-    background-color: transparent;
-    border: none;
-}
+    /* Dropdown */
+    nav ul li button{
+        font-size: var(--default-nav-font-size);
+        color: var(--default-nav-text-color);
+        padding: 10px 5px;
+        background-color: transparent;
+        border: none;
+    }
 
-nav ul li .dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: var(--default-color-dropdown);
-    width: var(--default-dropdown-width);
-    border-radius: 5px;
-}
+    nav ul li .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: var(--default-color-dropdown);
+        width: var(--default-dropdown-width);
+        border-radius: 5px;
+    }
 
-nav ul li .dropdown-content a{
-    color: var(--default-nav-text-color);
-    padding: 12px 16px;
-    display: block;
-    font-size: var(--default-dropdown-font-size);
-    background-color: var(--default-background-color);
-}
+    nav ul li .dropdown-content a{
+        color: var(--default-nav-text-color);
+        padding: 12px 16px;
+        display: block;
+        font-size: var(--default-dropdown-font-size);
+        background-color: var(--default-background-color);
+    }
 
-nav .dropdown:hover button{
-    color: var(--default-hover-background-color);
-}
+    nav .dropdown:hover button{
+        color: var(--default-hover-background-color);
+    }
 
-nav .dropdown:hover .dropdown-content{
-    display: block;
-}
+    nav .dropdown:hover .dropdown-content{
+        display: block;
+    }
 
-nav .dropdown-content a:hover{
-    color:var(--default-hover-background-color);
-}
+    nav .dropdown-content a:hover{
+        color:var(--default-hover-background-color);
+    }
 
-/* Hamburger */
-nav .hamburger{
-    display: none;
-}
+    /* Hamburger */
+    nav .hamburger{
+        display: none;
+    }
 
-nav .hamburger .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px 20px 0 0;
-    background-color: white;
-}
+    nav .hamburger .bar{
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px 20px 0 0;
+        background-color: white;
+    }
 
 /*
 .caret-right{
@@ -196,121 +196,157 @@ section .row::after{
 
 /* Home Page */
     /* About Us */
-section .aboutUs h1{
-    padding-top: var(--default-body-top-header-padding);
-}
+    section .aboutUs h1{
+        padding-top: var(--default-body-top-header-padding);
+    }
 
     /* Guiding Principles */
-section .guidingPrinciples ol{
-    padding-top: 1%;
-    columns: var(--principles-columns);
-    -webkit-columns: var(--principles-columns);
-    -moz-columns: var(--principles-columns);
-    list-style-position: inside;
-} 
+    section .guidingPrinciples ol{
+        padding-top: 1%;
+        columns: var(--principles-columns);
+        -webkit-columns: var(--principles-columns);
+        -moz-columns: var(--principles-columns);
+        list-style-position: inside;
+    } 
 
-section .guidingPrinciples ol li{
-    padding: 2% 0;
-}
+    section .guidingPrinciples ol li{
+        padding: 2% 0;
+    }
 
     /* Support Us Buttons */
-section .supportButtons{
-    padding-bottom: var(--default-body-top-header-padding);
-}
+    section .supportButtons{
+        padding-bottom: var(--default-body-top-header-padding);
+    }
 
 /* About Us Page */
     /* About Us and Guiding Principles */
-section .aboutUs p{
-    padding: 0;
-}
+    section .aboutUs p{
+        padding: 0;
+    }
 
-section .aboutUs img{
-    height: 40rem;
-    margin-top: var(--default-body-top-header-padding);
-    border-radius: 10px;
-}
-.aboutUs ol li{
-    list-style-position: inside;
-    padding: 2% 0;
-}
+    section .aboutUs img{
+        height: 40rem;
+        margin-top: var(--default-body-top-header-padding);
+        border-radius: 10px;
+    }
+    .aboutUs ol li{
+        list-style-position: inside;
+        padding: 2% 0;
+    }
 
     /* Leadership */
-section .leadership img{
-    height: 25rem;
-    border-radius: 15px;
-}
+    section .leadership img{
+        height: 25rem;
+        border-radius: 15px;
+    }
 
-section .leadership .title{
-    display: inline-block;
-}
+    section .leadership .title{
+        display: inline-block;
+    }
 
-section .leadership i{
-    font-size: 2rem;
-    display: inline-block;
-    color: var(--default-background-color);
-}
+    section .leadership i{
+        font-size: 2rem;
+        display: inline-block;
+        color: var(--default-background-color);
+    }
 
-section .leadership .column{
-    width: 33.33%;
-}
+    section .leadership .column{
+        width: 33.33%;
+    }
 
-section .organizationStucture img{
-    max-width: 100%;
-    height: auto;
-}
+    section .organizationStucture img{
+        max-width: 100%;
+        height: auto;
+    }
 
 /* About BattleBots Page */
     /* About Combat Robotics and About BattleBots */
-.aboutCombatRobotics iframe, .aboutBattleBots iframe{
-    padding-top: var(--default-body-top-header-padding);
-    width: var(--default-video-width);
-    height: var(--default-video-height);
-}
+    .aboutCombatRobotics iframe, .aboutBattleBots iframe{
+        padding-top: var(--default-body-top-header-padding);
+        width: var(--default-video-width);
+        height: var(--default-video-height);
+    }
 
-    /* Constrains and Criteria Table */
-section .constrainsAndCriteria table{
-    width: var(--default-weightClasses-width);
-    margin: 0 auto;
-    border-collapse: collapse;
-}
-section .constrainsAndCriteria table th, td{
-    text-align: center;
-    padding: .5% 0;
-}
+        /* Constrains and Criteria Table */
+    section .constrainsAndCriteria table{
+        width: var(--default-weightClasses-width);
+        margin: 0 auto;
+        border-collapse: collapse;
+    }
+    section .constrainsAndCriteria table th, td{
+        text-align: center;
+        padding: .5% 0;
+    }
 
 /* Sponsors Page */
     /* Sponsors */  /* Same for Home Page*/
-section .sponsors .sponsorLogos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    text-align: center;
-  }
-section .sponsors .sponsorLogos a{
-    background-color: transparent;
-}
+    section .sponsors .sponsorLogos{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 10px 0;
+        text-align: center;
+    }
+    section .sponsors .sponsorLogos a{
+        background-color: transparent;
+    }
 
-section .sponsors .sponsorLogos .item{
-    padding: 20px;
-    margin: auto;
-    display: block;
-}
-section .sponsors .sponsorLogos .item img{
-      width: 50%;
-}
-    /* Business Plan */
+    section .sponsors .sponsorLogos .item{
+        padding: 20px 0;
+        margin: auto;
+        display: block;
+    }
+    section .sponsors .sponsorLogos .item img{
+        width: 50%;
+    }
+        /* Business Plan */
 
     /* Sponsor Benefits */
 
 /* Contact Us Page*/
     /* Contact Form */
-section .contact .companyEmail, section .contact .information{
-    font-size: var(--font-size);
-    height: var(--Height);
-    width: var(--Width);
-    border-radius: 5px;
-}
+    section form h1{
+        text-align: center;
+    }
 
+    section form label{
+        text-align: left;
+    }
+
+    input[type=text], input[type=email]{
+        width: 100%;
+        padding: 15px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+
+    input[type=submit]{
+        width: 100%;
+        background-color: var(--default-background-color);
+        color: var(--default-nav-text-color);
+        padding: 15px 20px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover{
+        background-color: rgb(100, 100, 100);
+    }
+
+    /* Social Media */
+    section .socialMedia{
+        text-align: center;
+    }
+    section .socialMedia img{
+        height: 7rem;
+    }
+    section .socialMedia .column{
+        background-color: transparent;
+        color: black;
+        font-size: 7rem;
+        border-spacing: 10px;
+        
+    }
+    
 /* Resources */
 
 /* Footer */
