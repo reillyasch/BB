@@ -319,11 +319,12 @@ section .row::after{
         resize: vertical;
         box-sizing: border-box;
         float: left;
+        padding: 15px 10px;
     }
     input[type=text], input[type=email]{
         font-size: 20px;
         width: 75%;
-        padding: 15px 0;
+        padding: 15px 10px;
         box-sizing: border-box;
         float: left;
     }
