@@ -304,28 +304,38 @@ section .row::after{
 
 /* Contact Us Page*/
     /* Contact Form */
-    section form h1{
-        text-align: center;
+    section form{
+        padding-left: 30px;
     }
-
     section form label{
-        text-align: left;
+        float: left;
+        padding-right: 25%;
+        padding-top: 2%;
     }
-
-    input[type=text], input[type=email]{
-        width: 100%;
-        padding: 15px 20px;
-        margin: 8px 0;
-        display: inline-block;
+    textarea{
+        font-size: 20px;
+        width: 75%;
+        height: 100px;
+        resize: vertical;
         box-sizing: border-box;
+        float: left;
+    }
+    input[type=text], input[type=email]{
+        font-size: 20px;
+        width: 75%;
+        padding: 15px 0;
+        box-sizing: border-box;
+        float: left;
     }
 
     input[type=submit]{
-        width: 100%;
+        font-size: 20px;
+        width: 75%;
         background-color: var(--default-background-color);
         color: var(--default-nav-text-color);
-        padding: 15px 20px;
+        padding: 15px;
         cursor: pointer;
+        margin-top: 1%;
     }
 
     input[type=submit]:hover{
@@ -333,19 +343,23 @@ section .row::after{
     }
 
     /* Social Media */
-    section .socialMedia{
-        text-align: center;
-    }
     section .socialMedia img{
         height: 7rem;
     }
-    section .socialMedia .column{
+
+    section .socialMedia a{
         background-color: transparent;
         color: black;
-        font-size: 7rem;
-        border-spacing: 10px;
-        
+        font-size: 7rem;        
     }
+    section .socialMedia table{
+        width: 100%;
+        padding: 30px 15%;
+    }
+    th, td{
+        width: 50%;
+    }
+
     
 /* Resources */
 
