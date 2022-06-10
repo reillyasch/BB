@@ -337,6 +337,7 @@ section .row::after{
         padding: 15px;
         cursor: pointer;
         margin-top: 1%;
+        float: left;
     }
 
     input[type=submit]:hover{
@@ -353,14 +354,19 @@ section .row::after{
         color: black;
         font-size: 7rem;        
     }
+
     section .socialMedia table{
         width: 100%;
         padding: 30px 15%;
     }
-    th, td{
+
+    section .socialMedia th, td{
         width: 50%;
     }
 
+    section .socialMedia .YouTube{
+        padding-top: 20px;
+    }
     
 /* Resources */
 
