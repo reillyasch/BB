@@ -536,7 +536,7 @@ footer{
         top: 0;
     }
 
-    /* .footer-icon{
+    .footer-icon{
         height: 23.5px;
         padding: 0 10px;
     }
@@ -544,5 +544,5 @@ footer{
         font-size: 25px;
         color: white;
         padding-right: 10px;
-    } */
+    }
 }
