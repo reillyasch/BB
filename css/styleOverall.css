@@ -32,12 +32,17 @@
     --font-size: 1.25rem;
 }
 
-@import url('http://fonts.cdnfonts.com/css/lemonmilk');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lemon/Milk', sans-serif;
+}
+
+@font-face {
+    font-family: 'Lemon/Milk';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lemon/Milk'), url('https://fonts.cdnfonts.com/s/14917/LemonMilk.woff') format('woff');
 }
 
 /* Header */
@@ -298,9 +303,37 @@ section .row::after{
     section .sponsors .sponsorLogos .item img{
         width: 50%;
     }
-        /* Business Plan */
+    /* Business Plan */
 
     /* Sponsor Benefits */
+    section .sponsorBenefits table{
+        margin: 10px 1% 1% 1%;
+        border-collapse: collapse;
+        font-size: 1.75rem;
+    }
+
+    section .sponsorBenefits table td, th{
+        text-align: center;
+        padding: 0 100px;
+        border: 2px solid;
+        font-weight: bold;
+    }
+
+    section .sponsorBenefits table tr .bronze{
+        background-color: #cd7f32;
+    }
+
+    section .sponsorBenefits table tr .silver{
+        background-color: rgb(230, 230, 230);
+    }
+
+    section .sponsorBenefits table tr .gold{
+        background-color: #FFD700;
+    }
+
+    section .sponsorBenefits table tr .diamond{
+        background-color: #b9f2ff;
+    }
 
 /* Contact Us Page*/
     /* Contact Form */
