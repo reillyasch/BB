@@ -2,12 +2,11 @@
     /* Header Variables */
     --default-background-color: rgb(15, 15, 15); /* Off Black */
     --default-page-header-font-size: 3.5vw;
-    --default-nav-font-size: 1.00vw;
+    --default-nav-font-size: 1.25vw;
     --default-hover-background-color: rgb(160, 160, 160);
-    --default-dropdown-font-size:1.20rem;
-    --default-sub-dropdown-font-size: 1.00rem;
+    --default-dropdown-font-size:1.25vw;
     --default-nav-text-color: white;
-    --default-dropdown-width: 11rem;
+    --default-dropdown-width: 16rem;
     --default-footer-padding: 2.5%;
 
     /* General Section Variables */
@@ -85,7 +84,7 @@ nav ul li a{
     font-size: var(--default-nav-font-size);
     font-weight: 400;
     color: var(--default-nav-text-color);
-    padding: 10px 5px;
+    padding: 0 5px;
     text-decoration: none;
 }
 
@@ -101,12 +100,11 @@ nav ul li a{
         text-decoration: underline;
     }
 
-
     /* Dropdown */
     nav ul li button{
         font-size: var(--default-nav-font-size);
         color: var(--default-nav-text-color);
-        padding: 10px 5px;
+        padding: 0 5px;
         background-color: transparent;
         border: none;
     }
@@ -121,10 +119,11 @@ nav ul li a{
 
     nav ul li .dropdown-content a{
         color: var(--default-nav-text-color);
-        padding: 12px 16px;
         display: block;
         font-size: var(--default-dropdown-font-size);
         background-color: var(--default-background-color);
+        text-align: left;
+        padding: 10px;
     }
 
     nav .dropdown:hover button{
@@ -152,14 +151,12 @@ nav ul li a{
         background-color: white;
     }
 
-/*
 .caret-right{
     display: inline;
 }
 .caret-down{
     display: none;
 }
-*/
 
 /* General Section */
 section{
@@ -440,24 +437,9 @@ footer{
 }
 
 @media only screen and (max-width: 960px){
-    header.active{
+    nav ul{
         position: fixed;
-        background-color: var(--default-background-color);
-        width: 100%;
-        height: 100%;
-    }
-    .header-img{
-        width: 90%;
-        padding: 5em 0;
-    }
-    .header-title{
-        font-size: 2.75em;
-        padding: 0 20px;
-    }
-
-    .nav-menu{
-        position: fixed;
-        left: -100%;
+        left: 100%;
         height: 100%;
         top: 16em;
         flex-direction: column;
@@ -465,25 +447,46 @@ footer{
         width: 100%;
         text-align: center;
     }
-    .nav-menu.active{
+    nav ul.active{
         left: 0;
     }
+
+    nav .hamburger{
+        display: block;
+        margin: auto 0;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    nav .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
     
-    .dropdown-content{
+    nav .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    nav ul li a, nav ul li .dropdown button{
+        color: black;
+    }
+    
+    nav ul li .dropdown .dropdown-content{
         display: none;
         position: relative;
         background-color: var(--default-color-dropdown);
         width: var(--default-dropdown-width);
     }
-    .nav-link{
-        font-size: 1.5em;
-        color: black;
-    }
-    .dropbtn{
+
+    button{
         font-size: 1.5em;
         color: black;
         width: 6em;
     }
+
     .sub-nav-link{
         text-align: center;
         color: black;
@@ -491,38 +494,22 @@ footer{
     .sub-dropbtn{
         margin: auto;
     }
+
     .caret-right{
         display: none;
     }
+    
     .caret-down{
         display: inline;
     }
+
     .sub-dropdown-content{
         position: relative;
         left: 0;
         top: 0;
     }
 
-    .hamburger{
-        display: block;
-        margin: auto 0;
-        cursor: pointer;
-        background-color: transparent;
-    }
-    .hamburger.active{
-        padding-right: 15px;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(3){
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .footer-icon{
+    /* .footer-icon{
         height: 23.5px;
         padding: 0 10px;
     }
@@ -530,5 +517,5 @@ footer{
         font-size: 25px;
         color: white;
         padding-right: 10px;
-    }
+    } */
 }
