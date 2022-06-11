@@ -1,34 +1,53 @@
 :root{
     /* Header Variables */
-    --default-background-color: rgb(15, 15, 15); /* Off Black */
-    --default-page-header-font-size: 3.5vw;
-    --default-nav-font-size: 1.25vw;
-    --default-hover-background-color: rgb(160, 160, 160);
-    --default-dropdown-font-size:1.25vw;
-    --default-nav-text-color: white;
-    --default-dropdown-width: 16rem;
-    --default-footer-padding: 2.5%;
+        /* navbar background color & section text color */
+        --primary-color-value: 20; /* Black */
+        --primary-rgb-color: rgb(var(--primary-color-value), var(--primary-color-value), var(--primary-color-value));
+        
+        /* navbar text color & section background color */
+        --secondary-color-value: 200; /* White */
+        --secondary-rgb-color: rgb(var(--secondary-color-value),var(--secondary-color-value),var(--secondary-color-value));
+
+        /* navbar font size */
+        --navbar-font-size: 1.25vw;
+
+        /* navbar hover color */
+        --navbar-hover-color: blue; /*rgb(160, 160, 160);*/
+
+        /* header font size i.e. "Welcome to Midnight Robotics" */
+        --nav-header-font-size: 3.5vw;
+
+        /* width of the dropdown area */
+        --default-dropdown-width: 16rem;
+
+        /* bottom padding for header */
+        --header-padding-bottom: 1vw;
 
     /* General Section Variables */
-    --default-body-header-font-size: 3.0vw;
-    --default-body-font-size: 2.0vw;
-    --default-body-top-header-padding: 1%;
-    --default-body-header-padding: 3%;
-    --default-body-button-margin: .5%;
-    --default-body-button-padding: .5%;
+        /* section header font size i.e "About Us", "Sponsors" */
+        --header-font-size: 3.0vw;
 
-    /* Home Page Variables */
-    --principles-columns: 2;
+        /* text font size */
+        --text-font-size: 2.0vw;
 
-    /* About BattleBots Variables */
-    --default-video-width: 75%;
-    --default-video-height: 500px;
-    --default-weightClasses-width: 50%;
+        /* padding for headings and top and bottom of the page */
+        --section-padding: 2%;
 
-    /* Contact Form */
-    --Width: 375px;
-    --Height: 50px;
-    --font-size: 1.25rem;
+        --default-body-button-margin: .5%;
+        --default-body-button-padding: .5%;
+
+        /* Home Page Variables */
+        --principles-columns: 2;
+
+        /* About BattleBots Variables */
+        --default-video-width: 75%;
+        --default-video-height: 500px;
+        --default-weightClasses-width: 50%;
+
+        /* Contact Form */
+        --Width: 375px;
+        --Height: 50px;
+        --font-size: 1.25rem;
 }
 
 *{
@@ -46,20 +65,21 @@
 
 /* Header */
 header{
-    background-color: var(--default-background-color);
+    background-color: var(--primary-rgb-color);
+    padding-bottom: var(--header-padding-bottom);
 }
 
 header .header-img{
     width: 75%;
-    padding: 4em 0;
+    padding: 4vw 0;
     display: block;
     margin: 0 auto;
 }
 
 header h1{
     text-align: center;
-    color: var(--default-nav-text-color);
-    font-size: var(--default-page-header-font-size);
+    color: var(--secondary-rgb-color);
+    font-size: var(--nav-header-font-size);
     font-weight: bold;
 }
 
@@ -81,9 +101,9 @@ nav ul li{
 }
 
 nav ul li a{
-    font-size: var(--default-nav-font-size);
+    font-size: var(--navbar-font-size);
     font-weight: 400;
-    color: var(--default-nav-text-color);
+    color: var(--secondary-rgb-color);
     padding: 0 5px;
     text-decoration: none;
 }
@@ -102,8 +122,8 @@ nav ul li a{
 
     /* Dropdown */
     nav ul li button{
-        font-size: var(--default-nav-font-size);
-        color: var(--default-nav-text-color);
+        font-size: var(--navbar-font-size);
+        color: var(--secondary-rgb-color);
         padding: 0 5px;
         background-color: transparent;
         border: none;
@@ -118,24 +138,20 @@ nav ul li a{
     }
 
     nav ul li .dropdown-content a{
-        color: var(--default-nav-text-color);
+        color: var(--secondary-rgb-color);
         display: block;
-        font-size: var(--default-dropdown-font-size);
-        background-color: var(--default-background-color);
+        font-size: var(--navbar-font-size);
+        background-color: var(--primary-rgb-color);
         text-align: left;
         padding: 10px;
-    }
-
-    nav .dropdown:hover button{
-        color: var(--default-hover-background-color);
     }
 
     nav .dropdown:hover .dropdown-content{
         display: block;
     }
 
-    nav .dropdown-content a:hover{
-        color:var(--default-hover-background-color);
+    nav ul li a:hover:not(.nav-active), nav .dropdown:hover button{
+        color:var(--navbar-hover-color);
     }
 
     /* Hamburger */
@@ -151,22 +167,17 @@ nav ul li a{
         background-color: white;
     }
 
-.caret-right{
-    display: inline;
-}
-.caret-down{
-    display: none;
-}
-
 /* General Section */
 section{
-    font-size: var(--default-body-font-size);
+    font-size: var(--text-font-size);
+    color: var(--primary-rgb-color);
+    background-color: var(--secondary-rgb-color);
     text-align: center;
 }
 
 section h1{
-    font-size: var(--default-body-header-font-size);
-    padding-top: var(--default-body-header-padding);
+    font-size: var(--header-font-size);
+    padding-top: var(--section-padding);
     font-weight: bold;
 }
 
@@ -178,8 +189,8 @@ section p{
 section a{
     margin-top: var(--default-body-button-margin);
     padding: var(--default-body-button-padding);
-    background-color: var(--default-background-color);
-    color: var(--default-nav-text-color);
+    background-color: var(--primary-rgb-color);
+    color: var(--secondary-rgb-color);
     text-decoration: none;
     display: inline-block;
 }
@@ -198,8 +209,8 @@ section .row::after{
 
 /* Home Page */
     /* About Us */
-    section .aboutUs h1{
-        padding-top: var(--default-body-top-header-padding);
+    section .aboutUs img{
+        padding-top: var(--section-padding);
     }
 
     /* Guiding Principles */
@@ -216,8 +227,8 @@ section .row::after{
     }
 
     /* Support Us Buttons */
-    section .supportButtons{
-        padding-bottom: var(--default-body-top-header-padding);
+    section .supportUsButtons{
+        padding-bottom: var(--section-padding);
     }
 
 /* About Us Page */
@@ -228,7 +239,7 @@ section .row::after{
 
     section .aboutUs img{
         height: 40rem;
-        margin-top: var(--default-body-top-header-padding);
+        /* margin-top: var(---section-padding); */
         border-radius: 10px;
     }
     .aboutUs ol li{
@@ -249,7 +260,7 @@ section .row::after{
     section .leadership i{
         font-size: 2rem;
         display: inline-block;
-        color: var(--default-background-color);
+        color: var(--primary-rgb-color);
     }
 
     section .leadership .column{
@@ -257,14 +268,15 @@ section .row::after{
     }
 
     section .organizationStucture img{
+        padding-bottom: var(--section-padding);
         max-width: 100%;
         height: auto;
     }
 
 /* About BattleBots Page */
     /* About Combat Robotics and About BattleBots */
-    .aboutCombatRobotics iframe, .aboutBattleBots iframe{
-        padding-top: var(--default-body-top-header-padding);
+    section .aboutCombatRobotics iframe, section .aboutBattleBots iframe{
+        padding-top: var(--section-padding);
         width: var(--default-video-width);
         height: var(--default-video-height);
     }
@@ -278,6 +290,10 @@ section .row::after{
     section .constrainsAndCriteria table th, td{
         text-align: center;
         padding: .5% 0;
+    }
+
+    section .matchHistory{
+        
     }
 
 /* Sponsors Page */
@@ -303,8 +319,10 @@ section .row::after{
     /* Business Plan */
 
     /* Sponsor Benefits */
+    section .sponsorBenefits{
+        padding: 10px 1% 1% 1%;
+    }
     section .sponsorBenefits table{
-        margin: 10px 1% 1% 1%;
         border-collapse: collapse;
         font-size: 1.75rem;
     }
@@ -337,33 +355,32 @@ section .row::after{
     section form{
         padding-left: 30px;
     }
+
     section form label{
         float: left;
         padding-right: 25%;
         padding-top: 2%;
     }
-    textarea{
+
+    input[type=text], input[type=email], textarea{
         font-size: 20px;
         width: 75%;
-        height: 100px;
-        resize: vertical;
+        padding: 15px 10px;
         box-sizing: border-box;
         float: left;
-        padding: 15px 10px;
+        color: var(--secondary-rgb-color);
+        background-color: var(--primary-rgb-color);
     }
-    input[type=text], input[type=email]{
-        font-size: 20px;
-        width: 75%;
-        padding: 15px 10px;
-        box-sizing: border-box;
-        float: left;
+
+    textarea{
+        resize: vertical;
     }
 
     input[type=submit]{
         font-size: 20px;
         width: 75%;
-        background-color: var(--default-background-color);
-        color: var(--default-nav-text-color);
+        background-color: var(--primary-rgb-color);
+        color: var(--secondary-rgb-color);
         padding: 15px;
         cursor: pointer;
         margin-top: 1%;
@@ -399,11 +416,14 @@ section .row::after{
     }
     
 /* Resources */
-
+    section .links a{
+        background-color: transparent;
+    }
+    
 /* Footer */
 footer{
-    padding-top: 0;
-    background-color: var(--default-background-color);
+    padding: 0 20px;
+    background-color: var(--primary-rgb-color);
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -420,7 +440,7 @@ footer{
 .footer-email{
     font-size: 1rem;
     padding-left: 15px;
-    color: white;
+    color: var(--secondary-rgb-color);
 }
 .footer-socialMedia{
     padding-top: 25px;
@@ -432,18 +452,18 @@ footer{
 }
 .footer-linkedin i{
     font-size: 30px;
-    color: white;
+    color: var(--secondary-rgb-color);
     padding-right: 10px;
 }
 
-@media only screen and (max-width: 960px){
+@media only screen and (max-width: 500px){
     nav ul{
         position: fixed;
         left: 100%;
         height: 100%;
         top: 16em;
         flex-direction: column;
-        background-color: var(--default-nav-text-color);
+        background-color: var(--secondary-rgb-color);
         width: 100%;
         text-align: center;
     }
