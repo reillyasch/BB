@@ -12,7 +12,8 @@
         --navbar-font-size: 1.25vw;
 
         /* navbar hover color */
-        --navbar-hover-color: blue; /*rgb(160, 160, 160);*/
+        --navbar-hover-color-value: 150;
+        --navbar-hover-rgb-color: rgb(var(--navbar-hover-color-value), var(--navbar-hover-color-value), var(--navbar-hover-color-value));
 
         /* header font size i.e. "Welcome to Midnight Robotics" */
         --nav-header-font-size: 3.5vw;
@@ -158,7 +159,7 @@ nav ul li a{
     }
 
     nav ul li a:hover:not(.nav-active), nav .dropdown:hover button{
-        color:var(--navbar-hover-color);
+        color:var(--navbar-hover-rgb-color);
     }
 
     /* Hamburger */
