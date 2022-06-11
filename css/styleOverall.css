@@ -33,21 +33,28 @@
         /* padding for headings and top and bottom of the page */
         --section-padding: 2%;
 
-        --default-body-button-margin: .5%;
-        --default-body-button-padding: .5%;
+        /* padding for width and height of buttons */
+        --button-padding: .5%;
 
-        /* Home Page Variables */
-        --principles-columns: 2;
+            /* Home Page Variables */
+            /* sets guiding principles to two columns */
+            --principles-columns: 2;
 
-        /* About BattleBots Variables */
-        --default-video-width: 75%;
-        --default-video-height: 500px;
-        --default-weightClasses-width: 50%;
+            /* About Us Variables */
 
-        /* Contact Form */
-        --Width: 375px;
-        --Height: 50px;
-        --font-size: 1.25rem;
+
+            /* About BattleBots Variables */
+            /* sets the width of the battlebots videos */
+            --battlebots-video-width: 75%;
+
+            /* minimum height of battlebots videos */
+            --battlebots-video-height: 50vh;
+            
+            /* width of the weight classes table */
+            --weightClasses-table-width: 50%;
+
+            /* Contact Form */
+
 }
 
 *{
@@ -164,7 +171,7 @@ nav ul li a{
         width: 25px;
         height: 3px;
         margin: 5px 20px 0 0;
-        background-color: white;
+        background-color: var(--secondary-color-value);
     }
 
 /* General Section */
@@ -188,7 +195,7 @@ section p{
 
 section a{
     margin-top: var(--default-body-button-margin);
-    padding: var(--default-body-button-padding);
+    padding: var(--button-padding);
     background-color: var(--primary-rgb-color);
     color: var(--secondary-rgb-color);
     text-decoration: none;
@@ -277,13 +284,13 @@ section .row::after{
     /* About Combat Robotics and About BattleBots */
     section .aboutCombatRobotics iframe, section .aboutBattleBots iframe{
         padding-top: var(--section-padding);
-        width: var(--default-video-width);
-        height: var(--default-video-height);
+        width: var(--battlebots-video-width);
+        height: var(--battlebots-video-height);
     }
 
         /* Constrains and Criteria Table */
     section .constrainsAndCriteria table{
-        width: var(--default-weightClasses-width);
+        width: var(--weightClasses-table-width);
         margin: 0 auto;
         border-collapse: collapse;
     }
@@ -367,7 +374,6 @@ section .row::after{
         width: 75%;
         padding: 15px 10px;
         box-sizing: border-box;
-        float: left;
         color: var(--secondary-rgb-color);
         background-color: var(--primary-rgb-color);
     }
@@ -491,7 +497,7 @@ footer{
     }
 
     nav ul li a, nav ul li .dropdown button{
-        color: black;
+        color: var(--primary-color-value);
     }
     
     nav ul li .dropdown .dropdown-content{
@@ -503,13 +509,13 @@ footer{
 
     button{
         font-size: 1.5em;
-        color: black;
+        color: var(--primary-color-value);
         width: 6em;
     }
 
     .sub-nav-link{
         text-align: center;
-        color: black;
+        color: var(--primary-color-value);
     }
     .sub-dropbtn{
         margin: auto;
