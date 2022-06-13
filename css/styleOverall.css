@@ -420,8 +420,19 @@ section .row::after{
     }
     
 /* Resources */
-    section .links a{
+    section .links{
+        padding: var(--section-padding) 0;
+    }
+
+    section .links a, section .links img{
+        color: var(--primary-color-value);
         background-color: transparent;
+        height: 7rem;
+        font-size: 7rem;
+    }
+
+    section .links .monday{
+        margin-top: -15px;
     }
     
 /* Footer */
