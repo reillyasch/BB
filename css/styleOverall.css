@@ -58,17 +58,13 @@
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'Lemon/Milk';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Lemon/Milk'), url('https://fonts.cdnfonts.com/s/14917/LemonMilk.woff') format('woff');
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Header */
@@ -377,6 +373,7 @@ section .row::after{
         box-sizing: border-box;
         color: var(--secondary-rgb-color);
         background-color: var(--primary-rgb-color);
+        float: left;
     }
 
     textarea{
