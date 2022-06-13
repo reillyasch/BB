@@ -1,13 +1,14 @@
 :root{
     /* Header Variables */
-        /* navbar background color & section text color */
-        --primary-color-value: 20; /* Black */
+        --primary-color-value: 30; /*Off-Black */
         --primary-rgb-color: rgb(var(--primary-color-value), var(--primary-color-value), var(--primary-color-value));
         
-        /* navbar text color & section background color */
-        --secondary-color-value: 200; /* White */
+        --secondary-color-value: 200; /*Off-White */
         --secondary-rgb-color: rgb(var(--secondary-color-value),var(--secondary-color-value),var(--secondary-color-value));
 
+        --tertiary-color-value: 255;
+        --tertiary-rgb-color: rgb(var(--tertiary-color-value), var(--tertiary-color-value),var(--tertiary-color-value))
+;
         /* navbar font size */
         --navbar-font-size: 1.25vw;
 
@@ -82,7 +83,7 @@ header .header-img{
 
 header h1{
     text-align: center;
-    color: var(--secondary-rgb-color);
+    color: var(--tertiary-rgb-color);
     font-size: var(--nav-header-font-size);
     font-weight: bold;
 }
@@ -104,10 +105,10 @@ nav ul li{
     list-style: none;
 }
 
-nav ul li a{
+nav ul li a, nav ul li button{
     font-size: var(--navbar-font-size);
     font-weight: 400;
-    color: var(--secondary-rgb-color);
+    color: var(--tertiary-rgb-color);
     padding: 0 5px;
     text-decoration: none;
 }
@@ -126,9 +127,6 @@ nav ul li a{
 
     /* Dropdown */
     nav ul li button{
-        font-size: var(--navbar-font-size);
-        color: var(--secondary-rgb-color);
-        padding: 0 5px;
         background-color: transparent;
         border: none;
     }
@@ -142,12 +140,12 @@ nav ul li a{
     }
 
     nav ul li .dropdown-content a{
-        color: var(--secondary-rgb-color);
-        display: block;
-        font-size: var(--navbar-font-size);
+        color: var(--tertiary-rgb-color);
         background-color: var(--primary-rgb-color);
-        text-align: left;
+        font-size: var(--navbar-font-size);
         padding: 10px;
+        text-align: left;
+        display: block;
     }
 
     nav .dropdown:hover .dropdown-content{
@@ -168,7 +166,7 @@ nav ul li a{
         width: 25px;
         height: 3px;
         margin: 5px 20px 0 0;
-        background-color: var(--secondary-color-value);
+        background-color: var(--tertiary-rgb-color);
     }
 
 /* General Section */
@@ -324,7 +322,7 @@ section .row::after{
 
     /* Sponsor Benefits */
     section .sponsorBenefits{
-        padding: 10px 1% 1% 1%;
+        padding: 0 2% 2% 2%;
     }
     section .sponsorBenefits table{
         border-collapse: collapse;
