@@ -422,11 +422,20 @@ section .row::after{
         padding: var(--section-padding) 0;
     }
 
+    section .links a .cad{
+        background-color: transparent;
+        height: 200px;
+        width: auto;
+    }
+
     section .links a, section .links img{
         color: var(--primary-color-value);
         background-color: transparent;
-        height: 7rem;
-        font-size: 7rem;
+        height: 15rem;
+    }
+
+    section .links .row .column .row{
+        padding: 0 125px;
     }
 
     section .links .monday{
