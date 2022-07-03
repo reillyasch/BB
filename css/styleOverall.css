@@ -62,7 +62,9 @@
             --sponsorDivHeight: 300px;
 
             /* Team Resources */
-            --imageWidth: 300px;
+            --cadImageWidth: 900px;
+            --cadDivHeight: 400px;
+            --imageWidth: 400px;
             --divHeight: 400px;
 
 }
@@ -469,11 +471,11 @@ section .row::after{
     }
 
     section .resources .cad .item{
-        height: var(--divHeight);
+        height: var(--cadDivHeight);
     }
 
     section .resources .cad .item img{
-        width: var(--imageWidth);
+        width: var(--cadImageWidth);
     }
 
     section .resources .organization{
@@ -490,15 +492,15 @@ section .row::after{
     }
 
     .solidworks{
-        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(1000/1600)))/2);
+        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(1000/1600)))/2);
     }
 
     .grabcad{
-        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(130/650)))/2);
+        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(130/650)))/2);
     }
 
     .onshape{
-        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(347/1556)))/2);
+        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(347/1556)))/2);
     }
 
     .monday{
@@ -508,6 +510,19 @@ section .row::after{
 
     .slack{
         margin-top: calc((var(--divHeight) - (var(--imageWidth)*(1600/1600)))/2);
+    }
+
+    .googledrive{
+        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(2058/2295)))/2);
+    }
+
+    .outlook{
+        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(952/1024)))/2);
+    }
+
+    .linkedin{
+        /* margin-top: calc((var(--divHeight) - (var(--imageWidth)*(1600/1600)))/2); */
+        font-size: var(--imageWidth);
     }
 
 /* Footer */
