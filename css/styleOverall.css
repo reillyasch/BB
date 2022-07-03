@@ -461,7 +461,11 @@ section .row::after{
     
 /* Resources */
     section .resources .item{
-        /* border: 1px solid black; */
+        border: 1px solid black;
+    }
+
+    section .resources .cad p{
+        margin-top: 150px;
     }
     
     section .resources .organization p{
@@ -484,7 +488,12 @@ section .row::after{
 
     section .resources .organization{
         display: grid;
-        grid-template-columns: auto auto auto auto;
+        grid-template-columns: auto auto;
+    }
+
+    section .resources .organization .column{
+        display: grid;
+        grid-template-columns: auto auto;
     }
 
     section .resources .organization .item{
@@ -509,7 +518,6 @@ section .row::after{
 
     .monday{
         margin-top: calc((var(--divHeight) - (var(--imageWidth)*(644/1107)))/2);
-
     }
 
     .slack{
