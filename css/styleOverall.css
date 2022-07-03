@@ -461,7 +461,7 @@ section .row::after{
     
 /* Resources */
     section .resources .item{
-        border: 1px solid black;
+        /* border: 1px solid black; */
     }
 
     section .resources .cad p{
@@ -470,6 +470,8 @@ section .row::after{
     
     section .resources .organization p{
         margin-top: 125px;
+        padding: none;
+        padding: 0;
     }
 
     section .resources .cad{
