@@ -463,6 +463,10 @@ section .row::after{
     section .resources .item{
         /* border: 1px solid black; */
     }
+    
+    section .resources .organization p{
+        margin-top: 125px;
+    }
 
     section .resources .cad{
         padding: var(--section-padding) 0;
