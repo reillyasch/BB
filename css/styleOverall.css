@@ -324,7 +324,7 @@ section .row::after{
         margin-top: calc((var(--sponsorDivHeight) - (var(--sponsorImageWidth)*(621/507)))/2);
     }
 
-    .monday{
+    .mondaySponsor{
         margin-top: calc((var(--sponsorDivHeight) - (var(--sponsorImageWidth)*(644/1107)))/2);
     }
 
@@ -460,20 +460,6 @@ section .row::after{
     }
     
 /* Resources */
-    section .resources .item{
-        /* border: 1px solid black; */
-    }
-
-    section .resources .cad p{
-        margin-top: 150px;
-    }
-    
-    section .resources .organization p{
-        margin-top: 125px;
-        padding: none;
-        padding: 0;
-    }
-
     section .resources .cad{
         padding: var(--section-padding) 0;
         display: grid;
@@ -482,6 +468,10 @@ section .row::after{
 
     section .resources .cad .item{
         height: var(--cadDivHeight);
+    }
+
+    section .resources .cad p{
+        margin-top: 150px;
     }
 
     section .resources .cad .item img{
@@ -498,12 +488,14 @@ section .row::after{
         grid-template-columns: auto auto;
     }
 
-    section .resources .organization .item{
-        height: var(--divHeight);
-    }
-
-    section .resources .organization .item img{
+    section .resources .organization .column .item img, section .resources .organization .column .item i{
         width: var(--imageWidth);
+    }
+    
+    section .resources .organization .column p{
+        margin-left: 30px;
+        width: var(--imageWidth);
+        font-size: 1.75vw;
     }
 
     .solidworks{
@@ -519,7 +511,7 @@ section .row::after{
     }
 
     .monday{
-        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(644/1107)))/2);
+        margin-top: calc((var(--divHeight) - (var(--imageWidth)*(644/1107)))/2);    
     }
 
     .slack{
@@ -536,7 +528,8 @@ section .row::after{
 
     .linkedin{
         /* margin-top: calc((var(--divHeight) - (var(--imageWidth)*(1600/1600)))/2); */
-        font-size: var(--imageWidth);
+        font-size: calc(var(--imageWidth)*1);
+
     }
 
 /* Footer */
