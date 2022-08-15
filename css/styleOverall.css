@@ -569,7 +569,7 @@ footer{
 }
 
 @media only screen and (max-width: 500px){
-    nav ul{
+    /* nav ul{
         position: fixed;
         left: 100%;
         height: 100%;
@@ -649,5 +649,5 @@ footer{
         font-size: 25px;
         color: white;
         padding-right: 10px;
-    }
+    } */
 }
