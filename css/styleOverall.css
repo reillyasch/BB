@@ -499,8 +499,8 @@ section .row::after{
         font-size: 1.75vw;
     }
 
-    .discordTxt{
-        transform: translateY(-100px);
+    .discord{
+        margin-top: 100px;
     }
 
     .monday{
