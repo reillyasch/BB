@@ -494,20 +494,13 @@ section .row::after{
     
     section .resources .organization .column p{
         margin-left: 30px;
+        margin-top: 150px;
         width: var(--imageWidth);
         font-size: 1.75vw;
     }
 
-    .solidworks{
-        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(1000/1600)))/2);
-    }
-
-    .grabcad{
-        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(130/650)))/2);
-    }
-
-    .onshape{
-        margin-top: calc((var(--cadDivHeight) - (var(--cadImageWidth)*(347/1556)))/2);
+    .discordTxt{
+        transform: translateY(-100px);
     }
 
     .monday{
